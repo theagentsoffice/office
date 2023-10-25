@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    
+    
+    <title>Insurance Questionnaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(45deg, #007bff, #fff, #ff8800); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+        .container {
+            
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #0029cb; /* Blue text */
+            line-height: 1.4; /* Adjust line height */
+        }
+
+        .left h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+        .left img {
+            max-width: 400px; /* Adjust the size of your logo */
+        }
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+            width: 65%;
+            
+            
+        }
+        .right-container {
+            flex: 1;
+             /* Enable vertical scrolling for the right side */
+        }
+
+       
+
+        
+        
+
+       
+
+        
+
+       
+
+       
+
+        
+        h4{
+            color: #0029cb;
+        }
+        h1 {
+            color: #0029cb;
+            font-size: 32px;
+        }
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .h5 {
+                color: #0029cb; /* Blue text */
+                font-size: medium;
+
+            }
+
+        @media only screen and (max-width: 500px) {
+            .left img {
+        max-width: 100%; /* Make the image responsive for mobile */
+        height: auto; /* Maintain the image's aspect ratio */
+    }
+
+            .container {
+              
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .left {
+                margin-top: 10px;
+                
+                width: 60%;
+                
+                display: block;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  
+            
+            color: #0029cb; /* Blue text */
+            }
+            .left h2 {
+                display: block !important;
+
+            }
+            
+            .left h1 {
+                
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+       
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+            
+    }
+    #typing-effect {
+overflow: hidden;
+width: 150%;
+border-right: .15em solid orange;
+white-space: nowrap;
+animation: typing 3s steps(25) , blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent; }
+50% { border-color: orange; }
+}
+
+
+
+
+
+
+
+@keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+          .left h5 {
+           font-size: 24px;
+            background: linear-gradient(90deg, orange, pink, blue, rgb(241, 10, 49), transparent);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            background-size: 200% 100%;
+            animation: gradientAnimation 5s linear infinite;
+        }
+
+        .right h4 {
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+            <!-- Add your logo here -->
+
+            <img src="{{ url_for('static', filename='Transparent-The-Agents-Office.png') }}" alt="Transparent-The-Agents-Office">
+            <h1>
+                 Personalized Insurance Policy Recommendation Engine
+            </h1>
+            <h2>
+               
+
+
+
+              
+                
+                
+                <h5>Thank you for your submission {{name}}!</h5>
+            <h4  >Your recommendations are being generated and will be sent to your inbox shortly. Please check your email, including the spam folder, to ensure you receive the information.
+                </h4>
+                
+            <p>
+                We uphold the highest standards in data protection and discretion. For an in-depth understanding of our meticulous privacy practices, we invite you to review our <a href="https://theagentsoffice.com/privacy-policy">Privacy Policy. </a>
+            </p>
+        </div>
+        
+        </div>
+        <div id="preloader" class="preloader">
+            
+            <img src="{{ url_for('static', filename='animation.gif') }}" alt="Animation">
+
+        </div>
+        <script>
+            // Function to hide the preloader
+            function hidePreloader() {
+                document.getElementById('preloader').style.display = 'none';
+            }
+        
+            // Use the window.onload event to call the hidePreloader function
+            window.onload = hidePreloader;
+        </script>
+           <script>
+            // Function to set the text for the typing effect
+function typeEffect() {
+const text = document.getElementById("typing-effect").text()
+const targetElement = document.getElementById("typing-effect");
+targetElement.textContent = text;
+}
+document.addEventListener("DOMContentLoaded", function() {
+typeEffect();
+});
+
+        </script>
+    </div>
+    
+</body>
+</html>

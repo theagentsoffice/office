@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <meta property="og:image" content="static/agents.webp">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="200">
+    <title>Uncover Hidden Coverage with P.I.P.R.E. | The Agent's Office</title>
+    <meta name="og:description" content="Reveal the best insurance policies you've never considered, personalized for you.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='Transparent-The-Agents-Office.png') }}" type="image/x-icon">
+    <style>
+        body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(45deg, #007bff, #fff, #ff8800); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+    
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+        .container {
+            
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #0029cb; /* Blue text */
+            line-height: 1.4; /* Adjust line height */
+        }
+      
+         
+
+        .left h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+        .left img {
+            max-width: 400px; /* Adjust the size of your logo */
+        }
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+
+        .right {
+            
+            flex: 1;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 500px; /* Increased form width */
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            font-size: 19px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select, input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            font-size: 19px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            margin-bottom: 21px;
+            font-size: 19px;
+            
+           
+        }
+        input[type="checkbox"]{
+            flex-direction: column;
+            vertical-align: top;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff; /* Blue color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+
+        input[id="submitt"]::before {
+            content: "\f072"; /* Unicode for airplane icon */
+            font-family: "Font Awesome 5 Free";
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+
+        input[type="submitt"]:hover::before {
+            transform: rotate(45deg);
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #007bff;
+        }
+
+        input[type="radio"]:hover,
+        input[type="checkbox"]:hover {
+            transform: scale(1.1);
+        }
+
+        input[type="radio"]:checked::before {
+            content: "\2713";
+            font-size: 16px;
+            padding-right: 5px;
+            color: #007bff;
+        }
+        @media only screen and (min-width: 800px){
+            form{
+                overflow-y: auto; 
+    max-height: 80vh;
+            }
+
+        }
+        @media only screen and (max-width: 500px) {
+            .left img {
+        max-width: 100%; /* Make the image responsive for mobile */
+        height: auto; /* Maintain the image's aspect ratio */
+    }
+
+            .container {
+              margin-top: 1600px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .left {
+                margin-top: 10px;
+                
+                width: 60%;
+                
+                display: block;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  
+            
+            color: #0029cb; /* Blue text */
+            }
+            .left h2 {
+                display: block !important;
+
+            }
+            .left h1 {
+                
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+       
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+            
+    }
+
+    .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+            <!-- Add your logo here -->
+
+            <img src="{{ url_for('static', filename='Transparent-The-Agents-Office.png') }}" alt="Transparent-The-Agents-Office">
+            <h1>
+                 Personalized Insurance Policy Recommendation Engine
+            </h1>
+            <h2>
+               
+
+
+
+                Simply input a few details and the P.I.P.R.E will spring into action!
+
+
+
+<br> 
+<br>
+Engage with The Personalized Insurance Policy Recommendation Engine now and let us do the work for you!
+
+</h2>
+            <p>
+                We uphold the highest standards in data protection and discretion. For an in-depth understanding of our meticulous privacy practices, we invite you to review our <a href="https://theagentsoffice.com/privacy-policy">Privacy Policy. </a>
+            </p>
+        </div>
+        <div class="right">
+            <form method="post" action="/submit_form" >
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="16" max="122" required>
+                <br>
+                <label for="occupation">Employment Status:</label>
+                <select name="occupation" id="occupation" required>
+                    <option value="">Select</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Self-Employed">Self-Employed</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Retired">Retired</option>
+                </select>
+                <br>
+                <label for="marital_status">Marital Status:</label>
+                <select name="marital_status" id="marital_status" required>
+                    <option value="">Select</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Engaged">Engaged</option>
+                </select>
+                <br>
+                <label>Do You Have Children?</label>
+<input type="radio" name="children" value="YesChildren"> Yes
+<input type="radio" name="children" value="NoChildren"> No
+<br>
+<label>Do You Have Any Pets?</label>
+<input type="radio" name="pets" value="YesPets" required> Yes
+<input type="radio" name="pets" value="NoPets" required> No
+<br>
+<label>Do You Own a Vehicle?</label>
+<input type="radio" name="vehicle" value="YesVehicle" required> Yes
+<input type="radio" name="vehicle" value="NoVehicle" required> No
+<br>
+<label>Do You Own a House?</label>
+<input type="radio" name="house" value="YesHouse" required> Yes
+<input type="radio" name="house" value="NoHouse" required> No
+<br>
+<label>Do You Own Rental Property?</label>
+<input type="radio" name="rental_property" value="YesRentalProperty" required> Yes
+<input type="radio" name="rental_property" value="NoRentalProperty" required> No
+<br>
+<label>Do You Own Jewelry or Firearms in Excess of $1,000?</label>
+<input type="radio" name="jewelry_firearms" value="YesJewelryFirearms" required> Yes
+<input type="radio" name="jewelry_firearms" value="NoJewelryFirearms" required> No
+<br>
+                <label>Recent Life Events (Select all that apply):</label>
+                <input type="checkbox" name="life_events" value="Job Change"> Job Change <br>
+                <input type="checkbox" name="life_events" value="Just Married"> Just Married <br>
+                <input type="checkbox" name="life_events" value="Recently Relocated"> Recently Relocated <br>
+                <input type="checkbox" name="life_events" value="Just Bought a Home"> Just Bought a Home <br>
+                <input type="checkbox" name="life_events" value="Just Bought a New Car"> Just Bought a New Car <br>
+                <input type="checkbox" name="life_events" value="Recently Had a Baby"> Recently Had a Baby <br>
+                <br>
+
+                <label for="state">City & State:</label>
+                <input type="text" name="state" id="state" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <input type="submit" value="Submit" >
+            </form>
+        </div>
+        <div id="preloader" class="preloader">
+            
+            <img src="{{ url_for('static', filename='animation.gif') }}" alt="Animation">
+
+        </div>
+        <script>
+            // Function to hide the preloader
+            function hidePreloader() {
+                document.getElementById('preloader').style.display = 'none';
+            }
+        
+            // Use the window.onload event to call the hidePreloader function
+            window.onload = hidePreloader;
+        </script>
+    </div>
+    <script></script>
+</body>
+</html>

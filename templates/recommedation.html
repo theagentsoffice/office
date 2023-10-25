@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Insurance Questionnaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(45deg, #007bff, #fff, #ff8800); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+        .container {
+            margin-top: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #0029cb; /* Blue text */
+            line-height: 1.4; /* Adjust line height */
+        }
+
+        .left h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+        .left img {
+            max-width: 400px; /* Adjust the size of your logo */
+        }
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+            width: 65%;
+            
+            
+        }
+        .right-container {
+            flex: 1;
+             /* Enable vertical scrolling for the right side */
+        }
+
+       
+
+        
+        
+
+       
+
+        
+
+       
+
+       
+
+        
+        h4{
+            color: #0029cb;
+        }
+        h1 {
+            color: #0029cb;
+            font-size: 32px;
+        }
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .h5 {
+                color: #0029cb; /* Blue text */
+                font-size: medium;
+
+            }
+
+        @media only screen and (max-width: 500px) {
+            .left img {
+        max-width: 100%; /* Make the image responsive for mobile */
+        height: auto; /* Maintain the image's aspect ratio */
+    }
+
+            .container {
+              margin-top: 2400px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .left {
+                margin-top: 10px;
+                
+                width: 60%;
+                
+                display: block;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  
+            
+            color: #0029cb; /* Blue text */
+            }
+            .left h2 {
+                display: block !important;
+
+            }
+            
+            .left h1 {
+                
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+       
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+            
+    }
+    #typing-effect {
+overflow: hidden;
+width: 150%;
+border-right: .15em solid orange;
+white-space: nowrap;
+animation: typing 3s steps(25) , blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent; }
+50% { border-color: orange; }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+            <!-- Add your logo here -->
+
+            <img src="{{ url_for('static', filename='Transparent-The-Agents-Office.png') }}" alt="Transparent-The-Agents-Office">
+            <h1>
+                 Personalized Insurance Policy Recommendation Engine
+            </h1>
+            <h2>
+               
+
+
+
+                To enhance your experience, The P.I.P.R.E will promptly display your results and deliver them directly to your inbox.
+                
+                
+                
+                <br> <span> </span>
+                Engage with The Personalized Insurance Policy Recommendation Engine now and let us do the work for you!
+                
+                </h2>
+            <p>
+                We uphold the highest standards in data protection and discretion. For an in-depth understanding of our meticulous privacy practices, we invite you to review our <a href="https://theagentsoffice.com/privacy-policy">Privacy Policy. </a>
+            </p>
+        </div>
+        <div class="right-container">
+        <div class="right"  >
+            <h1>{{name}}'s P.I.P.R.E. Results</h1>
+            <h4  >Congratulations on taking the first steps towards becoming financially bulletproof against unforeseen disasters and/or financially catastrophic events. 
+                Based on your input, here are the recommended policies you should consider looking into:
+                </h4>
+
+                
+                <h5 >
+                    <ul>
+                    {% for policy, description in policy_data %}
+                    <li>{{ policy }}</li>
+                    <p>{{ description }}</p>
+                    {% endfor %}
+                    </ul></h5>
+                    
+
+                    
+                    <!-- <p>Policy Descriptions:</p>
+                    <ul>
+                        {% for description in descriptions %}
+                        <li>{{ description }}</li>
+                        {% endfor %}
+                    </ul>
+                </ul> -->
+    <h4>“Keep in mind that this is not a comprehensive list nor does it take into account individual nuances you may want to discuss with your insurance provider.
+        Use the personalized information provided as an intelligent guide, not as an end-all be all, as there may be additional information needed to ensure the results you desire.”
+        </h4>
+       <h4>
+        <strong style="font-size: 24px;">Next Steps: </strong> <br>
+        <br>
+           
+To ensure these recommendations align perfectly with your unique needs and circumstances, we recommend taking the following steps: <br>
+<br>
+<strong style="font-size: 18px;"> 1. Contact Us for Personalized Guidance:</strong>  <br>
+<br>
+Our team of experienced insurance advisors is here to provide you with expert guidance tailored to your specific situation. We understand that insurance decisions are important and can be complex. By reaching out to us, you can benefit from our expertise and receive personalized recommendations that consider all your needs. <br><br>
+
+
+<strong style="font-size: 18px;">2. Get a Quote:</strong> <br>
+<br>
+If you're ready to explore these insurance policies further and obtain a detailed quote, we can assist you in obtaining quotes from our trusted insurance partners. We'll work to find you the best rates while ensuring your coverage matches your requirements. Simply<a href="mailto:george@theagentsoffice.com?subject=QUOTE%20ME&body=Please%20provide%20your%20relevant%20contact%20information,%20name,%20and%20address.">
+    CLICK HERE
+  </a><br>
+  
+  <br>
+  
+Contacting Us is Easy: <br>
+<br>
+You can reach our friendly team by email us at results@theagentsoffice.com or by filling out the <a href="https://theagentsoffice.com/contact/">form here</a>. <br> 
+<br>
+We're here to make the insurance process straightforward and stress-free. Your financial security and peace of mind is our top priorities. 
+<br> 
+<br>We look forward to assisting you in finding the insurance solutions that best meet your needs. <br> <br>
+Disclaimer: <br>
+Keep in mind that this is not a comprehensive list, nor does it take into account individual nuances you may want to discuss with your insurance provider. <br>
+<br>
+Use the personalized information provided as an intelligent guide, not as an end-all be all, as there may be additional information needed to ensure the results you desire. <br>
+<br>
+Additional Resources: <br>
+<a href="https://theagentsoffice.com/prepare-for-the-worst/">Prepare for the Worst: Unpacking the Psychology Behind Preparedness</a><br>
+<a href="https://theagentsoffice.com/use-life-insurance-to-create-generational-wealth/">How To Use Life Insurance to Create Generational Wealth</a><br>
+<a href="https://theagentsoffice.com/how-to-find-the-best-insurance-agent-near-you/">How to Find the Best Insurance Agent Near You: The Ultimate Guide</a><br>
+<a href="https://theagentsoffice.com/7-incredible-tips-for-getting-the-best-auto-insurance-quote/">7 Incredible Tips for Getting the Best Auto Insurance Quote</a>
+
+
+
+        </h4>
+        </div>
+        </div>
+        <div id="preloader" class="preloader">
+            
+            <img src="{{ url_for('static', filename='animation.gif') }}" alt="Animation">
+
+        </div>
+        <script>
+            // Function to hide the preloader
+            function hidePreloader() {
+                document.getElementById('preloader').style.display = 'none';
+            }
+        
+            // Use the window.onload event to call the hidePreloader function
+            window.onload = hidePreloader;
+        </script>
+           <script>
+            // Function to set the text for the typing effect
+function typeEffect() {
+const text = document.getElementById("typing-effect").text()
+const targetElement = document.getElementById("typing-effect");
+targetElement.textContent = text;
+}
+document.addEventListener("DOMContentLoaded", function() {
+typeEffect();
+});
+
+        </script>
+    </div>
+    
+</body>
+</html>
