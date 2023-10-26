@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     
-    <title>Insurance Questionnaire</title>
+    <title>Uncover Hidden Coverage with P.I.P.R.E. | The Agent's Office</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
+        @media only screen and (min-width: 800px){
+.right{
+overflow-y: auto;
+max-height: 80vh;
+}
+
+
+
+}
         body {
     font-family: "Arial", sans-serif;
     background: linear-gradient(45deg, #007bff, #fff, #ff8800); 
@@ -18,7 +27,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+    background-attachment: fixed;
 }
 
 @keyframes backgroundAnimation {
@@ -28,7 +37,7 @@
 
 
         .container {
-            margin-top: 1000px;
+            /* margin-top: 1000px; */
             display: flex;
             flex-wrap: wrap;
             width: 80%;
@@ -258,7 +267,7 @@ from, to { border-color: transparent; }
 
                 To enhance your experience, The P.I.P.R.E will promptly display your results and deliver them directly to your inbox.
                 
-                
+            <br>
                 
                 <br> <span> </span>
                 Engage with The Personalized Insurance Policy Recommendation Engine now and let us do the work for you!
@@ -277,12 +286,26 @@ from, to { border-color: transparent; }
 
                 
                 <h5 >
-                    <ul>
-                    {% for policy, description in policy_data %}
-                    <li>{{ policy }}</li>
-                    <p>{{ description }}</p>
-                    {% endfor %}
-                    </ul></h5>
+                    <p>
+
+
+
+                        <ul>
+                        {% for policy, data in policies.items() %}
+                        <li>
+                        <h3>{{ policy }}</h3>
+                        <p><strong>Definition:</strong> {{ data['Definition'] }}</p>
+                        <p><strong>Reason:</strong> {{ data['Reason'][0] }}</p>
+                        <p><strong>Example:</strong> {{ data['Example'] }}</p>
+                        </li>
+                        
+                        
+                        
+                        {% endfor %}
+                        
+                        
+                        
+                        </ul></p></h5>
                     
 
                     
