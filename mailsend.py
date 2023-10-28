@@ -17,7 +17,7 @@ def send_email_to_mailchimp(html_content, recipient_email):
 
     # Construct the email message
     message = {
-        "from_email": "office@theagentsoffice.com",
+        "from_email": "george@theagentsoffice.com",
         "subject": "P.I.P.R.E Results | The Agent's Office",
         "html": html_content,
         "to": [
