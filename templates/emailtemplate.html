@@ -248,12 +248,12 @@ from, to { border-color: transparent; }
                     {% for policy, data in policies.items() %}
                         <li>
                             <h3>{{ policy }}</h3>
-                            <p><strong>Definition:</strong> {{ data['Definition'] }}</p>
+                            <!-- <p><strong>Definition:</strong> {{ data['Definition'] }}</p>
                             <p><strong>Reason:</strong> {{ data['Reason'][0] }}</p>
-                            <p><strong>Example:</strong> {{ data['Example'] }}</p>
-                              <!-- <p><strong style='font-size: 17px;'></strong> {{ data['Definition'] }}</p>
+                            <p><strong>Example:</strong> {{ data['Example'] }}</p> -->
+                              <p><strong style='font-size: 17px;'></strong> {{ data['Definition'] }}</p>
                         <p><strong style='font-size: 17px;'>Reason:</strong> {{ data['Reason'][0] }}</p>
-                        <p><strong style='font-size: 17px;'>Example:</strong> {{ data['Example'] }}</p> -->
+                        <p><strong style='font-size: 17px;'>Example:</strong> {{ data['Example'] }}</p>
                         </li>
                     
 
