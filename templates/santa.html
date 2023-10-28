@@ -152,84 +152,10 @@
             }
 
         @media only screen and (max-width: 500px) {
-            .left img {
-        max-width: 100%; /* Make the image responsive for mobile */
-        height: auto; /* Maintain the image's aspect ratio */
-    }
+          
+           
 
-            .container {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-right: auto;
-            margin-left: auto;
-              
-
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
-            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-            .left {
-                margin-top: 10px;
-                
-                width: 60%;
-                
-                display: block;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
-  
-            
-            color: #0029cb; /* Blue text */
-            }
-            .left h2 {
-                display: block !important;
-
-            }
-            
-            .left h1 {
-                
-    text-transform: uppercase;
-    font-size: 28px;
-    margin-bottom: 10px;
-    display: inline;
-    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: -100% 0;
-    }
-}
-
-
-       
-
-        .left p {
-            font-size: 16px;
-            padding: 5px; /* Adjust padding */
-            text-align: center;
-            margin-bottom: 10px;
-
-        }
-
-        .left a {
-            text-decoration: none;
-            color: #007bff; /* Blue text for the link */
-        }
-        .left p {
-            text-decoration: none;
-            color: #000000; /* Blue text for the link */
-        }
+        
             
     }
     #typing-effect {
@@ -375,7 +301,13 @@ typeEffect();
         
             function domContentLoaded(evt) {
               try {
-                CANVAS_WIDTH = screen.width+900 + BLOW_DISTANCE * 2;
+                if (screen.width <500){
+                  CANVAS_WIDTH = screen.width+200 + BLOW_DISTANCE * 2;
+                }
+                else{
+                 CANVAS_WIDTH = screen.width+500 + BLOW_DISTANCE * 2; 
+                }
+                
                 CANVAS_HEIGHT = screen.height + 1500;
                 let bSkyStyleBuilt = false;
                 let sSnowySkyClass = "snowySky";
@@ -413,7 +345,6 @@ typeEffect();
                     s.push("  margin:0px;");
                     s.push("  overflow:hidden;");
                     s.push("  background-repeat: no-repeat;");
-                    s.push("  background-attachment: fixed;");
                     s.push("}");
                     s.push("");
                     bSkyStyleBuilt = true;
@@ -429,7 +360,7 @@ typeEffect();
                   s.push("");
         
                   s.push(".iAmHidden {");
-                  s.push("  display:none;");
+                  
                   s.push("}");
         
                   if (!bSimpleParallaxLibLoaded) {
