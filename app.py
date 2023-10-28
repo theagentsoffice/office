@@ -457,6 +457,8 @@ def submit_form():
 
 
 
+
+
     return render_template('recommedation.html', policy_data=policy_data, name=name,policies=selected_policies)
 
 
