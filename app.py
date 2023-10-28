@@ -71,6 +71,7 @@ policy_recommendations = {
     'YesRentalProperty': [
         ('RENTAL PROPERTY INSURANCE', 'Protect your investment and peace of mind with rental property insurance. It shields you from unexpected disasters, covering damage, liability, and lost rental income. Dont risk financial ruin; safeguard your property and income as soon as possible.'),
         ('PERSONAL LIABILITY UMBRELLA POLICY', 'A personal liability umbrella policy is crucial because it provides extra protection beyond your standard insurance coverage. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
+        ,('RENTAL DWELLING INSURANCE', '')
     ],
     'NoRentalProperty': [],
 
@@ -233,6 +234,11 @@ def submit_form():
             'Reason': ["Many young adults adopt pets, which can have unexpected medical needs."],
             'Example': "Ethan, 31, adopts a dog which then needs surgery. Pet medical insurance helps cover the costs."
         },
+        'RENTAL DWELLING INSURANCE': {
+            'Definition': "RENTAL DWELLING INSURANCE",
+            'Reason': ["RENTAL DWELLING INSURANCE"],
+            'Example': "RENTAL DWELLING INSURANCE"
+        },
     },
     '31-60': {
     'LIFE INSURANCE': {
@@ -331,8 +337,14 @@ def submit_form():
         'Example': 
             "A 42-year-old's dog might need surgery, and the insurance can help offset the high vet bill."
             
+            
         
-    }
+    },
+    'RENTAL DWELLING INSURANCE': {
+            'Definition': "RENTAL DWELLING INSURANCE",
+            'Reason': ["RENTAL DWELLING INSURANCE"],
+            'Example': "RENTAL DWELLING INSURANCE"
+        },
 },
     '61-99': {
         'LIFE INSURANCE': {
@@ -379,6 +391,11 @@ def submit_form():
             'Definition': "Covers veterinary expenses if your pet gets sick or injured.",
             'Reason': ["Pets can be especially crucial companions for seniors, offering emotional support."],
             'Example': "A 64-year-old's beloved cat requires surgery. Pet medical insurance helps cover the costs, ensuring the cat gets the needed care."
+        },
+        'RENTAL DWELLING INSURANCE': {
+            'Definition': "RENTAL DWELLING INSURANCE",
+            'Reason': ["RENTAL DWELLING INSURANCE"],
+            'Example': "RENTAL DWELLING INSURANCE"
         },
     }
 }
