@@ -15,7 +15,7 @@ overflow-y: auto;
 max-height: 80vh;
 }
 
-
+/* .right h3{font-size: 35px;color: #ff8800;} */
 
 }
         body {
@@ -152,7 +152,7 @@ max-height: 80vh;
                 font-size: medium;
 
             }
-
+/* .right p{font-size: 20px;} */
         @media only screen and (max-width: 500px) {
             .left img {
         max-width: 100%; /* Make the image responsive for mobile */
@@ -160,7 +160,7 @@ max-height: 80vh;
     }
 
             .container {
-              margin-top: 2400px;
+              margin-top: 1000px;
             display: flex;
             flex-wrap: wrap;
             width: 80%;
@@ -316,8 +316,8 @@ from, to { border-color: transparent; }
                         {% endfor %}
                     </ul>
                 </ul> -->
-    <h4>“Keep in mind that this is not a comprehensive list nor does it take into account individual nuances you may want to discuss with your insurance provider.
-        Use the personalized information provided as an intelligent guide, not as an end-all be all, as there may be additional information needed to ensure the results you desire.”
+    <h4>Keep in mind that this is not a comprehensive list nor does it take into account individual nuances you may want to discuss with your insurance provider.
+        Use the personalized information provided as an intelligent guide, not as an end-all be all, as there may be additional information needed to ensure the results you desire.
         </h4>
        <h4>
         <strong style="font-size: 24px;">Next Steps: </strong> <br>
@@ -366,7 +366,7 @@ Additional Resources: <br>
             <img src="{{ url_for('static', filename='animation.gif') }}" alt="Animation">
 
         </div>
-        <script>
+        <!-- <script>
             // Function to hide the preloader
             function hidePreloader() {
                 document.getElementById('preloader').style.display = 'none';
@@ -374,7 +374,20 @@ Additional Resources: <br>
         
             // Use the window.onload event to call the hidePreloader function
             window.onload = hidePreloader;
-        </script>
+        </script> -->
+        <script>
+            // Function to hide the preloader after a 3-second delay
+            function hidePreloader() {
+            setTimeout(function() {
+            document.getElementById('preloader').style.display = 'none';
+            }, 3000); // 3000 milliseconds = 3 seconds
+            }
+            
+            
+            
+            // Use the window.onload event to call the hidePreloader function
+            window.onload = hidePreloader;
+            </script>
            <script>
             // Function to set the text for the typing effect
 function typeEffect() {
