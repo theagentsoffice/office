@@ -450,7 +450,9 @@ def submit_form():
 
    # return render_template('animation.html', policy_data=policy_data, name=name)
    
-    return render_template('santa.html', policy_data=policy_data, name=name,policies=selected_policies)
+    #return render_template('santa.html', policy_data=policy_data, name=name,policies=selected_policies)
+
+    return render_template('recommendation.html', policy_data=policy_data, name=name,policies=selected_policies)
 
 
 
