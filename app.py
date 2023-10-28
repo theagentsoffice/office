@@ -184,7 +184,7 @@ def submit_form():
 
         policy_data = [(policy[0], policy[1]) for policy in unique_recommendations]
         recommendpolicy = [(policy[0]) for policy in unique_recommendations]
-        print(recommendpolicy)
+        #print(recommendpolicy)
         
 
         policy_data = {
@@ -409,7 +409,7 @@ def submit_form():
         else:
             age_group = '61-99'
         selected_policies = {policy: policy_data[age_group][policy] for policy in dynamic_policy_list if policy in policy_data[age_group]}
-        print(selected_policies)
+        #print(selected_policies)
         age=str(age)
 
 
@@ -441,7 +441,7 @@ def submit_form():
         # Remove the word from the string
         new_string = re.sub(pattern, '', original_string)
 
-        print(new_string)
+        #print(new_string)
         recipient_email = email
         send_email_to_mailchimp(html_content, recipient_email)
         send_email_to_mailchimp(html_content, recipient_email="ItsGeorge@outlook.com")
