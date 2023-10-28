@@ -235,7 +235,7 @@ def submit_form():
             'Example': "Ethan, 31, adopts a dog which then needs surgery. Pet medical insurance helps cover the costs."
         },
         'RENTAL DWELLING INSURANCE': {
-            'Definition': "RENTAL DWELLING INSURANCE",
+            'Definition': "0-30",
             'Reason': ["RENTAL DWELLING INSURANCE"],
             'Example': "RENTAL DWELLING INSURANCE"
         },
@@ -341,7 +341,7 @@ def submit_form():
         
     },
     'RENTAL DWELLING INSURANCE': {
-            'Definition': "RENTAL DWELLING INSURANCE",
+            'Definition': "31-60",
             'Reason': ["RENTAL DWELLING INSURANCE"],
             'Example': "RENTAL DWELLING INSURANCE"
         },
@@ -393,7 +393,7 @@ def submit_form():
             'Example': "A 64-year-old's beloved cat requires surgery. Pet medical insurance helps cover the costs, ensuring the cat gets the needed care."
         },
         'RENTAL DWELLING INSURANCE': {
-            'Definition': "RENTAL DWELLING INSURANCE",
+            'Definition': "61-122",
             'Reason': ["RENTAL DWELLING INSURANCE"],
             'Example': "RENTAL DWELLING INSURANCE"
         },
