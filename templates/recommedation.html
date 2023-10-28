@@ -36,7 +36,7 @@ max-height: 80vh;
 
 
         .container {
-            /* margin-top: 1000px; */
+            margin-top: 3%;
             display: flex;
             flex-wrap: wrap;
             width: 80%;
@@ -105,7 +105,7 @@ max-height: 80vh;
         .right {
             flex: 1;
             padding: 20px;
-            width: 65%;
+            width: 90%;
             
             
         }
@@ -148,9 +148,13 @@ max-height: 80vh;
         }
         .h5 {
                 color: #0029cb; /* Blue text */
-                font-size: medium;
+                
 
             }
+        .right h5{
+            font-size: 15px;
+            color: #000000;
+        }
 /* .right p{font-size: 20px;} */
         @media only screen and (max-width: 500px) {
             .left img {
@@ -159,10 +163,11 @@ max-height: 80vh;
     }
 
             .container {
-              margin-top: 5600px;
+              margin-top: auto;
             display: flex;
             flex-wrap: wrap;
             width: 80%;
+            
             background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -292,10 +297,10 @@ from, to { border-color: transparent; }
                         <ul>
                         {% for policy, data in policies.items() %}
                         <li>
-                        <h3>{{ policy }}</h3>
-                        <p><strong>Definition:</strong> {{ data['Definition'] }}</p>
-                        <p><strong>Reason:</strong> {{ data['Reason'][0] }}</p>
-                        <p><strong>Example:</strong> {{ data['Example'] }}</p>
+                        <h3 style='font-size: 21px;'>{{ policy }}</h3>
+                        <p><strong style='font-size: 17px;'>Definition:</strong> {{ data['Definition'] }}</p>
+                        <p><strong style='font-size: 17px;'>Reason:</strong> {{ data['Reason'][0] }}</p>
+                        <p><strong style='font-size: 17px;'>Example:</strong> {{ data['Example'] }}</p>
                         </li>
                         
                         

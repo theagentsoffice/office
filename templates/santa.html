@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  initial-scale=1">
+    
+    
+    <meta property="og:image" content="static/agents.webp">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="200">
+    <title>Uncover Hidden Coverage with P.I.P.R.E. | The Agent's Office</title>
+    <meta name="og:description" content="Reveal the best insurance policies you've never considered, personalized for you.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='Transparent-The-Agents-Office.png') }}" type="image/x-icon">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(45deg, #007bff, #fff, #ff8800); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+        .container {
+            
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            
+            background: rgba(255, 255, 255, 0.9); /* Glass effect with transparency */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #0029cb; /* Blue text */
+            line-height: 1.4; /* Adjust line height */
+        }
+
+        .left h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: inline;
+    background: linear-gradient(to right, #d7695a, #ff8800, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s linear infinite; /* Adjust animation duration and type as needed */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+        .left img {
+            max-width: 400px; /* Adjust the size of your logo */
+        }
+
+        .left p {
+            font-size: 16px;
+            padding: 5px; /* Adjust padding */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .left a {
+            text-decoration: none;
+            color: #007bff; /* Blue text for the link */
+        }
+        .left p {
+            text-decoration: none;
+            color: #000000; /* Blue text for the link */
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+            width: 65%;
+            
+            
+        }
+        .right-container {
+            flex: 1;
+             /* Enable vertical scrolling for the right side */
+        }
+
+       
+
+        
+        
+
+       
+
+        
+
+       
+
+       
+
+        
+        h4{
+            color: #0029cb;
+        }
+        h1 {
+            color: #0029cb;
+            font-size: 32px;
+        }
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .h5 {
+                color: #0029cb; /* Blue text */
+                font-size: medium;
+
+            }
+
+        @media only screen and (max-width: 500px) {
+          
+           
+
+        
+            
+    }
+    #typing-effect {
+overflow: hidden;
+width: 150%;
+border-right: .15em solid orange;
+white-space: nowrap;
+animation: typing 3s steps(25) , blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent; }
+50% { border-color: orange; }
+}
+
+
+
+
+
+
+
+@keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+          .left h5 {
+           font-size: 24px;
+            background: linear-gradient(90deg, orange, pink, blue, rgb(241, 10, 49), transparent);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            background-size: 200% 100%;
+            animation: gradientAnimation 5s linear infinite;
+        }
+
+        .right h4 {
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left">
+            
+            <!-- Add your logo here -->
+
+            <img src="{{ url_for('static', filename='Transparent-The-Agents-Office.png') }}" alt="Transparent-The-Agents-Office">
+            <h1>
+                 Personalized Insurance Policy Recommendation Engine
+            </h1>
+            <h2>
+               
+                <h5>Your recommendations are being generated and are on their way to your inbox, {{name}}!</h5>
+            <h4  >Please check your email, including the spam folder, to ensure you receive your results.
+                </h4>
+                
+            <p>
+                We uphold the highest standards in data protection and discretion. For an in-depth understanding of our meticulous privacy practices, we invite you to review our <a href="https://theagentsoffice.com/privacy-policy">Privacy Policy. </a>
+            </p>
+        </div>
+        
+        </div>
+        <div id="preloader" class="preloader">
+            
+            <img src="{{ url_for('static', filename='animation.gif') }}" alt="Animation">
+
+        </div>
+        <script>
+            // Function to hide the preloader
+            function hidePreloader() {
+                document.getElementById('preloader').style.display = 'none';
+            }
+        
+            // Use the window.onload event to call the hidePreloader function
+            window.onload = hidePreloader;
+        </script>
+           <script>
+            // Function to set the text for the typing effect
+function typeEffect() {
+const text = document.getElementById("typing-effect").text()
+const targetElement = document.getElementById("typing-effect");
+targetElement.textContent = text;
+}
+document.addEventListener("DOMContentLoaded", function() {
+typeEffect();
+});
+
+        </script>
+    </div>
+    <style>body {
+        
+        height: 100vh !important;
+        width: 100vw !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        
+        
+      }
+           
+     
+     
+      </style>
+      
+
+
+
+      <script>let simpleParallax;
+
+        function Snowfall(params) {
+          const snowfall = this;
+          let CANVAS_WIDTH = 600;
+          let CANVAS_HEIGHT = 400;
+          const TOTAL_SNOWFLAKES = 6000;
+          const FALL_TIME = 13;
+          const TOTAL_SNOWFLAKE_LAYERS = 8;
+          const BLOW_DISTANCE = 400;
+          let snowfallLayersByIndex = [];
+          let snowfallLayersByCanvasId = [];
+          let bSimpleParallaxLibLoaded = false;
+          let coreSnowflakeStylesNd;
+          let skyNd = getVal(params, "skyNode", document.body);
+        
+          const moonlitEvening = {
+            skyColor1: "#FAA91F",
+            skyColor2: "#FAA91F",
+            flakeColors: ["#61899e", "#61899e"]
+          };
+        
+          try {
+            window.addEventListener("DOMContentLoaded", domContentLoaded);
+        
+            function domContentLoaded(evt) {
+              try {
+                if (screen.width <500){
+                  CANVAS_WIDTH = screen.width+200 + BLOW_DISTANCE * 2;
+                }
+                else{
+                 CANVAS_WIDTH = screen.width+500 + BLOW_DISTANCE * 2; 
+                }
+                
+                CANVAS_HEIGHT = screen.height + 1500;
+                let bSkyStyleBuilt = false;
+                let sSnowySkyClass = "snowySky";
+        
+                if (typeof SimpleParallax !== "undefined") {
+                  simpleParallax = new SimpleParallax({
+                    maxMovement: BLOW_DISTANCE * 2
+                  });
+                  bSimpleParallaxLibLoaded = true;
+                } // end if
+        
+                coreSnowflakeStylesNd = document.getElementById("coreSnowflakeStyles");
+                if (
+                  coreSnowflakeStylesNd === null ||
+                  typeof coreSnowflakeStylesNd === "undefined"
+                ) {
+                  coreSnowflakeStylesNd = document.createElement("style");
+                  coreSnowflakeStylesNd.id = "coreSnowflakeStyles";
+                  let s = [];
+        
+                  //s.push("")
+                  //s.push("  ")
+                  if (
+                    skyNd.style.background === "" &&
+                    skyNd.style.backgroundImage === ""
+                  ) {
+                    let dt = new Date();
+                    let nCode = dt.getTime();
+                    sSnowySkyClass = sSnowySkyClass + nCode + "";
+        
+                    s.push("." + sSnowySkyClass + " {");
+                    s.push("  height: 100%;");
+                    s.push("background: linear-gradient(45deg, #d7695a, #ff8800, #007bff);");
+                    s.push("  padding:0px;");
+                    s.push("  margin:0px;");
+                    s.push("  overflow:hidden;");
+                    s.push("  background-repeat: no-repeat;");
+                    s.push("}");
+                    s.push("");
+                    bSkyStyleBuilt = true;
+                  } // end if
+        
+                  s.push(".snowFlakes {");
+                  s.push("  position:absolute;");
+                  s.push("  top:0px;");
+                  s.push("  left:0px;");
+                  s.push("  overflow:hidden;");
+                  s.push("  opacity:.8;");
+                  s.push("}");
+                  s.push("");
+        
+                  s.push(".iAmHidden {");
+                  
+                  s.push("}");
+        
+                  if (!bSimpleParallaxLibLoaded) {
+                    s.push("");
+                    s.push(".snowLayer {");
+                    s.push("  position:absolute;");
+                    s.push("  left:-" + BLOW_DISTANCE + "px;");
+                    s.push("  top:-" + BLOW_DISTANCE + "px;");
+                    s.push("  overflow:hidden;");
+                    s.push("}");
+                  } // end if
+        
+                  coreSnowflakeStylesNd.innerHTML = s.join("\n");
+                  document.body.appendChild(coreSnowflakeStylesNd);
+        
+                  if (bSkyStyleBuilt) {
+                    skyNd.className = sSnowySkyClass;
+                  } // end if
+                } // end if
+        
+                setupSnowFlakeLayers();
+              } catch (err) {
+                logErr(err);
+              } // end of try/catch block
+            } // end of domContentLoaded()
+        
+            function setupSnowFlakeLayers() {
+              try {
+                let flakeColors = [];
+                for (let n = 0; n < TOTAL_SNOWFLAKE_LAYERS; n++) {
+                  flakeColors.push("white"); // set defaults
+                } // next n
+        
+                // furthest away is darkest
+                flakeColors[0] = "#61899e";
+                flakeColors[1] = "#61899e";
+                flakeColors[2] = "#81a0b1";
+                flakeColors[3] = "#81a0b1";
+                flakeColors[4] = "#d0dce2";
+                flakeColors[5] = "#eff3f5";
+        
+                for (let n = 0; n < TOTAL_SNOWFLAKE_LAYERS; n++) {
+                  let dv;
+        
+                  if (bSimpleParallaxLibLoaded) {
+                    const layer = simpleParallax.addLayer();
+                    dv = layer.domNode;
+                  } else {
+                    // no parallax...
+                    dv = document.createElement("div");
+                    dv.className = "snowLayer";
+                    dv.style.width = CANVAS_WIDTH + "px";
+                    dv.style.height = CANVAS_HEIGHT + "px";
+                    dv.style.margin = "0px";
+                    dv.style.padding = "0px";
+                    dv.style.boxSizing = "border-box";
+                    document.body.appendChild(dv);
+                  } // end if/else
+        
+                  drawSnowFlakesForLayer(n + 1, dv, flakeColors[n]);
+                } // next n
+              } catch (err) {
+                logErr(err);
+              } // end of try/catch block
+            } // end of setupSnowFlakeLayers()
+        
+            function drawSnowFlakesForLayer(nCanvas, cntrNd, siFlakeColor) {
+              try {
+                const canvasA = document.createElement("canvas");
+                const canvasB = document.createElement("canvas");
+                const aniStyle = document.createElement("style");
+        
+                canvasA.id = "sn" + nCanvas + "_A";
+                canvasB.id = "sn" + nCanvas + "_B";
+        
+                let sFlakeColor = "white";
+        
+                if (typeof siFlakeColor === "string") {
+                  sFlakeColor = siFlakeColor;
+                } // end if
+        
+                drawSnowflakesOnCanvas(canvasA, nCanvas, sFlakeColor);
+                drawSnowflakesOnCanvas(canvasB, nCanvas, sFlakeColor);
+        
+                cntrNd.appendChild(canvasA);
+                cntrNd.appendChild(canvasB);
+        
+                let nRange = BLOW_DISTANCE * 2;
+        
+                let xOffset = intRnd(nRange) - Math.floor(nRange / 2);
+        
+                const s = [];
+        
+                // s.push("")
+                s.push("@keyframes snowfall" + nCanvas + "Part1 {");
+                s.push(" from {");
+                s.push("        transform: translate(0px, -" + screen.height + "px);");
+                s.push("        opacity:.5;");
+                s.push("      }");
+                s.push(" 20%  {");
+                s.push("        opacity:1;");
+                s.push("      }");
+        
+                s.push(" to {transform: translate(" + xOffset + "px, 0px);}");
+                s.push("}");
+                s.push("");
+                s.push(".doAni" + nCanvas + "Part1 {");
+                s.push(" animation-name: snowfall" + nCanvas + "Part1;");
+                s.push(" animation-duration: " + (FALL_TIME - nCanvas / 2) + "s;");
+                s.push(" animation-timing-function:linear;");
+                s.push(" animation-fill-mode: both;");
+                s.push("}");
+        
+                s.push("");
+                s.push("@keyframes snowfall" + nCanvas + "Part2 {");
+                s.push(" from {");
+                s.push("       transform: translate(" + xOffset + "px, 0px);");
+                s.push("       opacity:.5;");
+                s.push("      }");
+                s.push(" 20%  {");
+                s.push("        opacity:1;");
+                s.push("      }");
+                s.push(
+                  " to {transform: translate(" +
+                    xOffset * 2 +
+                    "px, " +
+                    screen.height +
+                    "px);}"
+                );
+                s.push("}");
+                s.push("");
+                s.push(".doAni" + nCanvas + "Part2 {");
+                s.push(" animation-name: snowfall" + nCanvas + "Part2;");
+                s.push(" animation-duration: " + (FALL_TIME - nCanvas / 2) + "s;");
+                s.push(" animation-timing-function:linear;");
+                s.push(" animation-fill-mode: both;");
+                s.push("}");
+        
+                aniStyle.innerHTML = s.join("\n");
+                document.body.appendChild(aniStyle);
+        
+                const snowflakeLayer = {};
+                snowflakeLayer.layerNum = nCanvas;
+                snowflakeLayer.aniPart1 = "doAni" + nCanvas + "Part1";
+                snowflakeLayer.aniPart2 = "doAni" + nCanvas + "Part2";
+                snowflakeLayer.canvasA = canvasA;
+                snowflakeLayer.canvasB = canvasB;
+                snowflakeLayer.currentAniPartA = 1;
+                snowflakeLayer.currentAniPartB = 1;
+                snowfallLayersByIndex.push(snowflakeLayer);
+                snowfallLayersByCanvasId[canvasA.id] = snowflakeLayer;
+                snowfallLayersByCanvasId[canvasB.id] = snowflakeLayer;
+        
+                canvasA.addEventListener("animationend", canvasAAnimationCompleted);
+                canvasB.addEventListener("animationend", canvasBAnimationCompleted);
+        
+                canvasA.classList.add(snowflakeLayer.aniPart1);
+                canvasB.classList.add("iAmHidden");
+              } catch (err) {
+                logErr(err);
+              } // end of try/catch block
+            } // end of drawSnowFlakesForLayer()
+        
+            function canvasAAnimationCompleted(evt) {
+              try {
+                const el = evt.srcElement || evt.originalTarget;
+        
+                const snowflakeLayer = snowfallLayersByCanvasId[el.id];
+        
+                const canvasA = snowflakeLayer.canvasA;
+                const canvasB = snowflakeLayer.canvasB;
+        
+                snowflakeLayer.currentAniPartA = handleAnimationSwitch(
+                  canvasA,
+                  canvasB,
+                  snowflakeLayer.currentAniPartA,
+                  snowflakeLayer.aniPart1,
+                  snowflakeLayer.aniPart2,
+                  "A"
+                );
+              } catch (err) {
+                logErr(err);
+              } // end of try/catch block
+            } // end of canvasAAnimationCompleted()
+        
+            function canvasBAnimationCompleted(evt) {
+              try {
+                const el = evt.srcElement || evt.originalTarget;
+        
+                const snowflakeLayer = snowfallLayersByCanvasId[el.id];
+        
+                const canvasA = snowflakeLayer.canvasA;
+                const canvasB = snowflakeLayer.canvasB;
+        
+                snowflakeLayer.currentAniPartB = handleAnimationSwitch(
+                  canvasB,
+                  canvasA,
+                  snowflakeLayer.currentAniPartB,
+                  snowflakeLayer.aniPart1,
+                  snowflakeLayer.aniPart2,
+                  "B"
+                );
+              } catch (err) {
+                logErr(err);
+              } // end of try/catch block
+            } // end of canvasBAnimationCompleted()
+        
+            /*
+             step 1:   (part 1 animation finishes ... A Canvas)
+                (A) canvas moves from part 1 to part 2
+                (B) canvas moves from hidden to part 1
+        
+             step 2:   (part 2 animation finishes ... A Canvas)
+                (A) canvas moves from part 2 to hidden
+           */
+        
+            function handleAnimationSwitch(
+              eventCanvas,
+              otherCanvas,
+              currentAniPart,
+              sAniPart1,
+              sAniPart2,
+              sAB
+            ) {
+              try {
+                if (currentAniPart === 1) {
+                  /*
+                  - move from part1 animation to part2 animation on event canvas
+                  - move from hidden to part1 animation on other canvas.
+                 */
+                  eventCanvas.classList.remove(sAniPart1);
+                  eventCanvas.classList.add(sAniPart2);
+        
+                  otherCanvas.classList.remove("iAmHidden");
+                  otherCanvas.classList.add(sAniPart1); // when done should trigger canvasBAnimationCompleted
+        
+                  currentAniPart = 2;
+                  return currentAniPart;
+                } // end if
+        
+                /*
+                 - move from part2 animation to hidden on event canvas
+               */
+                eventCanvas.classList.remove(sAniPart2);
+                eventCanvas.classList.add(sAniPart1);
+                currentAniPart = 1;
+                return currentAniPart;
+              } catch (err) {
+                logErr(err);
+              } // end try/catch
+            } // end of handleAnimationSwitch()
+        
+            function drawSnowflakesOnCanvas(canvas, nLayer, siFlakeColor) {
+              try {
+                canvas.width = CANVAS_WIDTH;
+                canvas.height = CANVAS_HEIGHT;
+                canvas.style.width = CANVAS_WIDTH + "px";
+                canvas.style.height = CANVAS_HEIGHT + "px";
+                canvas.style.zIndex = nLayer * 4 + "";
+                canvas.className = "snowFlakes";
+        
+                let sFlakeColor = "white";
+        
+                if (typeof siFlakeColor === "string") {
+                  sFlakeColor = siFlakeColor;
+                } // end if
+        
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = sFlakeColor;
+        
+                for (let n = 0; n < TOTAL_SNOWFLAKES; n++) {
+                  ctx.beginPath();
+                  let x = intRnd(CANVAS_WIDTH);
+                  let y = intRnd(CANVAS_HEIGHT);
+                  let nSize = 1 + intRnd(2);
+                  ctx.arc(x, y, nSize, 0, Math.PI * 2, true); //
+                  ctx.fill();
+                } // next n
+              } catch (err) {
+                logErr(err);
+              } // end of try/catch
+            } // end of drawSnowflakesOnCanvas()
+        
+            function intRnd(nMax) {
+              return Math.floor(Math.random() * nMax);
+            } // end of function intRnd()
+          } catch (err) {
+            logErr(err);
+          } // end of try/catch block for Snowfall
+        
+          function getVal(params, sParam, defVal) {
+            if (!params) {
+              params = {};
+            } // end if
+        
+            if (params[sParam]) {
+              return params[sParam];
+            } else {
+              if (typeof params[sParam] === "boolean") {
+                return params[sParam];
+              } // end if
+        
+              return defVal;
+            } // if / else
+          } // end of function getVal()
+        
+          /*************************************************************************
+           *************************************************************************/
+        
+          function logErr(err) {
+            console.group();
+            console.error(err.message);
+            console.error("line: " + err.line);
+            console.groupEnd();
+          } // end of logErr()
+        } // end of Snowfall() Constructor
+        
+        const snowfall = new Snowfall();
+        
+       
+        
+       
+        
+        
+        </script>
+   
+</div>
+</body>
+</html>
