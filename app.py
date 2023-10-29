@@ -190,54 +190,54 @@ def submit_form():
         policy_data = {
     '0-30': {
         'LIFE INSURANCE': {
-            'Definition': "Life insurance provides financial protection to beneficiaries in the event of the policyholder's death.",
-            'Reason': ["Younger adults (late teens to early 30s) often have dependents such as children, spouses, or aging parents."],
-            'Example': "Sarah, 28, recently had her first child. If something were to happen to her, the life insurance payout would help secure the child's future and cover immediate expenses."
+            'Definition': "Permanent life insurance is a type of life insurance that provides coverage for your entire lifetime, as long as you pay the premiums. It includes a savings component called cash value, which grows over time and can be used for various purposes.",
+            'Reason': ["Having permanent life insurance at a young age (0-30) is a smart financial move because it not only offers a lifelong safety net for your loved ones in case something happens to you, but it also serves as a long-term savings and investment tool. It can help you build wealth and provide financial security for your future, including retirement."],
+            'Example': "Imagine you're 25 years old and you purchase a permanent life insurance policy. Over the years, as you pay your premiums, the cash value within the policy grows tax-deferred. Before you know it, you can access this cash value to supplement your retirement income, pay for your children's education, or even use it for a down payment on a home. Plus, your beneficiaries will receive a tax-free death benefit when you pass away, ensuring your loved ones are financially protected."
         },
         'DISABILITY INSURANCE': {
-            'Definition': "This covers a portion of your income if you're unable to work due to an illness or injury.",
+            'Definition': "Disability insurance is a financial safety net that provides you with regular income if you become unable to work due to an illness or injury.",
             'Reason': ["Young adults entering the workforce face the risk of accidents or illnesses that could disrupt their income flow."],
-            'Example': "Jake, 25, breaks his leg in a skiing accident. His disability insurance helps cover his living expenses while he recovers and can't work."
+            'Example': "Imagine you're 22 years old and you injure your back in a car accident, making it impossible to do your job for several months. Disability insurance would provide you with a portion of your salary during this time, allowing you to focus on your recovery without worrying about your finances."
         },
         'AUTO INSURANCE': {
-            'Definition': "Covers financial losses due to vehicle accidents or theft.",
-            'Reason': ["Many people in this age bracket are buying their first cars and learning to drive. They're statistically more prone to accidents."],
-            'Example': "Mia, 19, accidentally rear-ends another car. Her auto insurance helps cover the damage."
+            'Definition': "Auto insurance is a financial safety net that helps protect you and others in case of accidents involving your vehicle.",
+            'Reason': ["Auto insurance is essential because it's the law in most places, and it shields you from potentially devastating financial consequences. It covers medical bills, repairs, and liability costs, which can add up to thousands of dollars if you're in an accident."],
+            'Example': " Imagine you're a 29-year-old driver, and you accidentally rear-end another car at a stoplight. Without auto insurance, you could be personally responsible for paying the other driver's medical bills, repairing their car, and even covering your own medical expenses if you're injured. Auto insurance steps in to cover these costs, saving you from financial ruin."
         },
         'HOMEOWNERS INSURANCE': {
-            'Definition': "Protects against damage to one's home and its contents.",
-            'Reason': ["Young adults might purchase their first home in this age range."],
-            'Example': "Alex, 30, has a tree fall on his house during a storm. His insurance helps cover repairs."
+            'Definition': "Homeowners insurance is a type of coverage that protects you financially if you own a home. It typically covers damages to your house, personal belongings, and provides liability protection.",
+            'Reason': [" Having homeowners insurance is crucial for young adults because it safeguards your investment in a home, shields you from unexpected disasters, and even covers you in case of certain accidents on your property."],
+            'Example': "Imagine you're a 21-year-old who just bought your first house. You're excited about being a homeowner, but then a wildfire sweeps through your area, causing extensive damage to your home. Without homeowners insurance, you'd be left with a massive repair bill, potentially bankrupting you. However, with homeowners insurance, your policy would cover the repair costs, allowing you to rebuild your life without a crippling financial setback."
         },
         'RENTERS INSURANCE': {
-            'Definition': "Covers damage or loss of personal property for those renting a living space.",
-            'Reason': ["Most young adults start by renting apartments or homes. This insurance helps protect their belongings."],
-            'Example': "Jordan, 23, has his apartment broken into and several items stolen. Renters insurance helps replace those items."
+            'Definition': "Renters insurance is a type of coverage that protects individuals who rent their homes or apartments. It typically includes coverage for personal belongings, liability protection, and additional living expenses in case your rented home becomes uninhabitable due to a covered event.",
+            'Reason': ["If you're between the ages of 18-30 and renting a place to live, renters insurance is essential because it safeguards your personal belongings and financial well-being. It's not just about being responsible; it's about ensuring you're covered when unexpected events occur."],
+            'Example': "Imagine you're a 24-year-old renting a cozy apartment. One day, a fire breaks out in the unit next to yours, causing smoke and water damage to your belongings. Without renters insurance, you'd be left to replace your furniture, electronics, and clothes on your own, which could cost thousands of dollars. But with renters insurance, your policy would likely cover the cost of replacing those items, helping you get back on your feet without a crippling financial burden. It's like having a safety net for life's unexpected curveballs."
         },
         'Personal Articles Policy': {
             'Definition': "Insures specific valuable items, such as jewelry or musical instruments.",
-            'Reason': ["Some young adults might have valuable items from family inheritances or personal acquisitions."],
-            'Example': "Zoe, 26, is a musician with an expensive guitar. She gets it insured separately due to its value."
+            'Reason': ["Young adults between the ages of 18-30 should consider a personal articles policy because it offers specialized protection for items like electronics, jewelry, musical instruments, or collectibles that may not be fully covered or have high deductibles under their regular insurance. It ensures that their valuable possessions are safeguarded against theft, loss, or damage."],
+            'Example': "Let's say you're a 25-year-old with a passion for photography, and you own a high-end camera worth $2,000. Unfortunately, your camera gets stolen while you're on vacation. Without a personal articles policy, your standard renters or homeowners insurance might only cover a fraction of its value, leaving you with a substantial out-of-pocket expense. But with a personal articles policy, you can get full coverage for your camera, easing the financial burden and allowing you to replace it without breaking the bank."
         },
         'HOSPITAL INCOME POLICY': {
-            'Definition': "Provides a daily stipend if hospitalized.",
-            'Reason': ["Even young adults can face hospitalizations. Having a daily payout can help cover out-of-pocket expenses."],
-            'Example': "Liam, 29, has an appendectomy and needs to stay in the hospital for several days. His policy helps cover incidental costs."
+            'Definition': "A hospital income policy is a type of insurance that provides financial support in case you are hospitalized due to illness or injury. It offers a daily or weekly cash benefit to help cover expenses related to their hospital stay.",
+            'Reason': ["Young adults between should consider a hospital income policy because it provides a safety net that can protect their finances during unexpected hospitalizations. At this stage in life, many may not have substantial savings or comprehensive health insurance, making it crucial to have an additional source of financial support when facing medical expenses."],
+            'Example': "Imagine you're working and living independently. You're in good health and have a basic health insurance plan. One day, you have an accident that requires a week-long hospitalization. While your health insurance may cover some medical bills, it might not cover daily living expenses or other costs like transportation and meals. A hospital income policy would provide you with a daily cash benefit during your hospital stay, helping you maintain your financial stability and cover those unforeseen expenses, so you can focus on your recovery without worrying about money"
         },
         'PERSONAL LIABILITY UMBRELLA POLICY': {
-            'Definition': "Provides additional liability coverage above what's offered by homeowners or auto insurance.",
-            'Reason': ["Young adults often host gatherings or travel, which can expose them to liability risks."],
-            'Example': "Ava, 27, hosts a party at her rented apartment. A guest gets injured. Her umbrella policy helps cover potential liabilities beyond her basic coverage."
+            'Definition': "A personal liability umbrella policy is a type of insurance that provides additional coverage beyond what your standard auto, home, or renters insurance policies offer. It acts as a safety net to protect your assets and future earnings in case you're involved in a major liability lawsuit.",
+            'Reason': ["The main reason young adults need a personal liability umbrella policy is to safeguard their financial future. This age group may not have substantial assets yet, but their potential future earnings are at risk if they're sued for a significant amount. Without this coverage, their savings, future income, and even personal property could be at stake in a lawsuit."],
+            'Example': "Let's say you're a 29-year-old with a modest income and some savings in the bank. You accidentally cause a car accident that results in serious injuries to the other party. Your auto insurance covers up to $100,000 in liability, but the injured party's medical bills, lost wages, and pain and suffering claims exceed that amount, totaling $500,000. Without a personal liability umbrella policy, you might be personally responsible for the remaining $400,000, which could wipe out your savings and even lead to wage garnishment in the future. However, if you had a personal liability umbrella policy, it could step in to cover the additional $400,000, protecting your savings and future income."
         },
         'PET MEDICAL INSURANCE': {
-            'Definition': "Covers medical expenses for pets.",
-            'Reason': ["Many young adults adopt pets, which can have unexpected medical needs."],
-            'Example': "Ethan, 31, adopts a dog which then needs surgery. Pet medical insurance helps cover the costs."
+            'Definition': "Pet medical insurance is a type of coverage that helps pay for the cost of veterinary care for your pets, such as dogs or cats, in case they get sick or injured.",
+            'Reason': ["Many young adults adopt pets. Pet medical insurance provides financial protection and peace of mind. It helps ensure that they can afford unexpected medical expenses for their beloved furry companions without breaking the bank."],
+            'Example': "Imagine you're a 28-year-old pet owner, and your energetic dog, Max, suddenly swallows something he shouldn't have. It results in an emergency trip to the vet, surgery, and a hefty bill of $3,000. Without pet medical insurance, you'd have to dig deep into your savings or rack up credit card debt. But with insurance, you only need to pay a manageable deductible, and the policy covers the rest, saving you from financial stress during an already worrying time."
         },
         'RENTAL DWELLING INSURANCE': {
-            'Definition': "0-30",
-            'Reason': ["RENTAL DWELLING INSURANCE"],
-            'Example': "RENTAL DWELLING INSURANCE"
+            'Definition': "Landlord insurance is a specialized insurance policy designed for individuals who own rental properties. It provides financial protection for landlords in various situations related to their rental properties.",
+            'Reason': ["If you're between the ages of 18-30 and own a rental property, landlord insurance is essential to safeguard your investment. It helps cover potential financial losses and liabilities that can arise from renting out your property to tenants."],
+            'Example': "Imagine you're a 25-year-old who owns a small apartment you rent out to tenants. One day, a water pipe bursts, flooding your rental unit and causing significant damage. Without landlord insurance, you'd have to pay for repairs and lose rental income while the unit is uninhabitable. But with landlord insurance, you can make a claim to cover repair costs and even the lost rent during the repairs, helping you avoid a substantial financial setback."
         },
     },
     '31-60': {
