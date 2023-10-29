@@ -329,21 +329,21 @@ def submit_form():
         
     },
     'PET MEDICAL INSURANCE': {
-        'Definition': "It helps cover the costs of veterinary care for pets.",
+        'Definition': "Pet medical insurance is a policy that covers the cost of veterinary care for pets, including dogs and cats.",
         'Reason': [
-            "Pets are often considered part of the family.",
+            "Having pet medical insurance between ages 31-60 is essential because as pets age, they are more likely to develop health issues, and medical expenses can become a significant financial burden.",
             "As pets age, their medical needs can grow, and so can the expenses."
         ],
         'Example': 
-            "A 42-year-old's dog might need surgery, and the insurance can help offset the high vet bill."
+            "For instance, a 45-year-old pet owner might need insurance for their aging dog, who requires surgery for a tumor removal, and without insurance, the procedure could cost thousands of dollars, potentially straining their budget."
             
             
         
     },
     'RENTAL DWELLING INSURANCE': {
-            'Definition': "31-60",
-            'Reason': ["RENTAL DWELLING INSURANCE"],
-            'Example': "RENTAL DWELLING INSURANCE"
+            'Definition': "Landlord insurance is a specialized insurance policy designed for individuals who own residential rental properties. It provides coverage for risks and liabilities associated with renting out a property to tenants.",
+            'Reason': ["If you're between the ages of 31-60 and own a rental property, having landlord insurance is crucial to protect your investment. It offers financial security by covering potential losses from property damage, liability claims, and rental income disruptions."],
+            'Example': "Imagine you're a 45-year-old who owns a rental home. One day, your tenant accidentally starts a kitchen fire, causing significant damage. Without landlord insurance, you'd have to pay for repairs out of your pocket. But with this insurance, your policy would cover the repair costs, ensuring your investment remains secure and your income stream uninterrupted."
         },
 },
     '61-99': {
@@ -393,9 +393,9 @@ def submit_form():
             'Example': "A 64-year-old's beloved cat requires surgery. Pet medical insurance helps cover the costs, ensuring the cat gets the needed care."
         },
         'RENTAL DWELLING INSURANCE': {
-            'Definition': "61-122",
-            'Reason': ["RENTAL DWELLING INSURANCE"],
-            'Example': "RENTAL DWELLING INSURANCE"
+            'Definition': "Landlord insurance is a specialized insurance policy designed for property owners who rent out their homes or apartments to tenants.",
+            'Reason': ["Landlords need landlord insurance to protect their investment properties from financial losses caused by damages, liability claims, or loss of rental income."],
+            'Example': "For instance, imagine a 70-year-old landlord renting out a house. If a tenant accidentally starts a kitchen fire, the landlord's insurance would cover the cost of repairs and any legal expenses if the tenant sued for injuries, ensuring their retirement income is safeguarded."
         },
     }
 }
