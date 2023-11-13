@@ -6,8 +6,6 @@ word_to_remove = "!@#$%&*()"
 # Create a regular expression pattern to match the word
 pattern = r'\b' + re.escape(word_to_remove) + r'\b'
 
-
-# Remove the word from the string
 new_string = re.sub(pattern, '', original_string)
 
 print(new_string)
