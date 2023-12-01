@@ -22,35 +22,35 @@ mail = Mail(app)
 # Create a dictionary to map inputs to policy recommendations
 policy_recommendations = {
     'EMPLOYED': [
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.')
+        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Get paid for short-term injuries. Long-term disability safeguards against extended illnesses, ensuring financial stability during tough times and has more stringest underwriting.')
     ],
     'SELF-EMPLOYED': [
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.'),
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.')
+        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Get paid for short-term injuries. Long-term disability safeguards against extended illnesses, ensuring financial stability during tough times and has more stringest underwriting.'),
+        ('LIFE INSURANCE', 'Life insurance provides a large sum of money, in the event of your passing, to your most loved ones.It preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and even ensuring generational wealth creation.')
     ],
     'UNEMPLOYED': [],
     'RETIRED': [],
 
     'SINGLE': [],
     'MARRIED': [
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.'),
-        ('PERSONAL ARTICLES POLICY', 'Protect your valuable possessions with personal articles insurance. It ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.')
+        ('LIFE INSURANCE', 'Life insurance provides a large sum of money, in the event of your passing, to your most loved ones.It preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and even ensuring generational wealth creation.'),
+        ('PERSONAL ARTICLES POLICY', 'Many people forget to protect their valuable possessions with personal articles insurance. This ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.')
     ],
     'ENGAGED': [
-        ('PERSONAL ARTICLES POLICY', 'Protect your valuable possessions with personal articles insurance. It ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.')
+        ('PERSONAL ARTICLES POLICY', 'Many people forget to protect their valuable possessions with personal articles insurance. This ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.')
     ],
 
     'YesChildren': [
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.'),
-        ('HOSPITAL INCOME POLICY', 'Hospital income insurance provides financial support during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Most policies allow you to add your children as a rider. Consider this, especially if you have an active child who plays sports.'),
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.'),
-        ('PERSONAL LIABILITY UMBRELLA POLICY', 'A personal liability umbrella policy is crucial because it provides extra protection beyond your standard insurance coverage. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
+        ('LIFE INSURANCE', 'Life insurance funds your legacy in the event of your passing, by providing a large sum of money to a beneficiary.  It will pay off debts and can even ensure generational wealth creation.'),
+        ('HOSPITAL INCOME POLICY', 'Hospital income insurance pays you during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Consider this, especially if you have an active child who plays sports.'),
+        ('DISABILITY INSURANCE', 'Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.'),
+        ('PERSONAL LIABILITY UMBRELLA POLICY', 'Getting a $1 umbrella may be a better option than maxing out the limits of your other policies. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
     ],
     'NoChildren': [],
 
     'YesPets': [
-        ('PET MEDICAL INSURANCE', 'Pet medical insurance provides peace of mind, ensuring your furry friend gets the best care without breaking the bank in unexpected emergencies.'),
-        ('PERSONAL LIABILITY UMBRELLA POLICY', 'A personal liability umbrella policy is crucial because it provides extra protection beyond your standard insurance coverage. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
+        ('PET MEDICAL INSURANCE', 'If you love your pet, you will consider Pet medical insurance. To ensure your furry friend gets the best care without breaking the bank in unexpected emergencies.'),
+        ('PERSONAL LIABILITY UMBRELLA POLICY', 'Getting a $1 umbrella may be a better option than maxing out the limits of your other policies. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
     ],
     'NoPets': [],
 
@@ -60,48 +60,47 @@ policy_recommendations = {
     'NoVehicle': [],
 
     'YesHouse': [
-        ('HOMEOWNERS INSURANCE POLICY', 'Homeowners insurance provides financial protection, ensuring that your home and belongings are covered in case of unexpected disasters or accidents, giving you peace of mind.'),
-        ('HOSPITAL INCOME POLICY', 'Hospital income insurance provides financial support during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Most policies allow you to add your children as a rider. Consider this, especially if you have an active child who plays sports.'),
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.')
+        ('HOMEOWNERS INSURANCE POLICY', 'Your home is your biggest investment. You should protect it ageinst catastrophes. Ensure that your home and belongings are covered in case of unexpected disasters or accidents.'),
+        ('HOSPITAL INCOME POLICY', 'Hospital income insurance pays you during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Consider this, especially if you have an active child who plays sports.'),
+        ('DISABILITY INSURANCE', 'Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.')
     ],
     'NoHouse': [
-        ('RENTERS INSURANCE', 'Renters insurance provides affordable peace of mind, ensuring your belongings are protected in case of unexpected events like fire, theft, or natural disasters. It also covers liability if someone is injured in your residence. For a small monthly fee, you can safeguard your financial future and replace your possessions, making it a smart and responsible choice for any renter.')
+        ('RENTERS INSURANCE', 'Renters insurance has more value than meets the eye. Protecting both the renter and the landlord, this policyRenters insurance provides affordable peace of mind. By ensuring your belongings are protected in case of unexpected events like fire, theft, or natural disasters. It also covers liability if someone is injured in your residence. For a small monthly fee, you can safeguard your financial future and replace your possessions, making it a smart and responsible choice for any renter.')
     ],
 
     'YesRentalProperty': [
-        ('RENTAL PROPERTY INSURANCE', 'Protect your investment and peace of mind with rental property insurance. It shields you from unexpected disasters, covering damage, liability, and lost rental income. Dont risk financial ruin; safeguard your property and income as soon as possible.'),
-        ('PERSONAL LIABILITY UMBRELLA POLICY', 'A personal liability umbrella policy is crucial because it provides extra protection beyond your standard insurance coverage. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
+        ('RENTAL PROPERTY INSURANCE', 'Protect your investment with this. It shields you from unexpected disasters, covering damage, liability, and lost rental income. Do not risk financial ruin; safeguard your property and income as soon as possible.'),
+        ('PERSONAL LIABILITY UMBRELLA POLICY', 'Getting a $1 umbrella may be a better option than maxing out the limits of your other policies. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.')
         ,('RENTAL DWELLING INSURANCE', '')
     ],
     'NoRentalProperty': [],
 
     'YesJewelryFirearms': [
-        ('PERSONAL ARTICLES POLICY', 'Protect your valuable possessions with personal articles insurance. It ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.')
+        ('PERSONAL ARTICLES POLICY', 'Many people forget to protect their valuable possessions with personal articles insurance. This ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.')
     ],
     'NoJewelryFirearms': [],
 
     'JOB CHANGE': [
         ('401K ROLLOVER', 'Rollover your 401(k) for control and growth. By transferring it to a new account, you unlock the power to manage your retirement savings on your terms. Choose investments that align with your goals, avoid fees, and consolidate multiple accounts for simplicity. Seize the opportunity to secure a brighter financial future.'),
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.')
+        ('LIFE INSURANCE', 'Life insurance funds your legacy in the event of your passing, by providing a large sum of money to a beneficiary.  It will pay off debts and can even ensure generational wealth creation.')
     ],
 
     'UPCOMING MARRIAGE': [
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.'),
-        ('PERSONAL ARTICLES POLICY', 'Protect your valuable possessions with personal articles insurance. It ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.'),
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.')
+        ('LIFE INSURANCE', 'Life insurance funds your legacy in the event of your passing, by providing a large sum of money to a beneficiary.  It will pay off debts and can even ensure generational wealth creation.'),
+        ('PERSONAL ARTICLES POLICY', 'Many people forget to protect their valuable possessions with personal articles insurance. This ensures that your cherished items, from jewelry to electronics, are safeguarded against theft, loss, or damage, providing peace of mind.'),
+        ('DISABILITY INSURANCE', 'Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.')
     ],
 
     'BUYING A HOME': [
-        ('HOMEOWNERS INSURANCE POLICY', 'Homeowners insurance provides financial protection, ensuring that your home and belongings are covered in case of unexpected disasters or accidents, giving you peace of mind.'),
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.'),
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.'),
-        ('HOSPITAL INCOME POLICY', 'Hospital income insurance provides financial support during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Most policies allow you to add your children as a rider. Consider this, especially if you have an active child who plays sports.')
+        ('HOMEOWNERS INSURANCE POLICY', 'Your home is your biggest investment. You should protect it ageinst catastrophes. Ensure that your home and belongings are covered in case of unexpected disasters or accidents.'),
+        ('LIFE INSURANCE', 'Life insurance funds your legacy in the event of your passing, by providing a large sum of money to a beneficiary.  It will pay off debts and can even ensure generational wealth creation.'),
+        ('DISABILITY INSURANCE', 'Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.'),
     ],
 
     'BUYING A NEW VEHICLE': [
         ('AUTO INSURANCE', 'Auto insurance provides financial protection and peace of mind, ensuring you wont bear the burden of costly accidents or damages on your own.'),
-        ('DISABILITY INSURANCE', 'Protect your income and peace of mind with disability insurance. Short-term covers temporary injuries, while long-term safeguards against extended illnesses, ensuring financial stability during tough times.'),
-        ('LIFE INSURANCE', 'Life insurance provides financial security for your loved ones. In the event of your passing, it preserves the memory of your legacy by covering expenses, paying off debts, offering peace of mind, and ensuring generational wealth creation.')
+        ('DISABILITY INSURANCE', 'Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.'),
+        ('LIFE INSURANCE', 'Life insurance funds your legacy in the event of your passing, by providing a large sum of money to a beneficiary.  It will pay off debts and can even ensure generational wealth creation.')
     ]
 }
 
@@ -190,49 +189,49 @@ def submit_form():
         policy_data = {
     '0-30': {
         'LIFE INSURANCE': {
-            'Definition': "Permanent life insurance provides lifelong coverage with a growing cash value component, as long as premiums are paid.",
-            'Reason': ["Acquiring permanent life insurance between ages 0-30 is a wise financial decision, providing lifelong protection for loved ones and serving as a long-term savings and investment tool for future security, including retirement."],
-            'Example': "As a young person, if you buy a permanent life insurance policy, its tax-deferred cash value grows with each premium. You can later use this for retirement, children's education, or a home down payment. Additionally, your beneficiaries get a tax-free death benefit, securing their financial future."
+            'What Is It?': "Permanent life insurance provides lifelong coverage with a growing cash value component, as long as premiums are paid.",
+            'Reason': ["Acquiring permanent life insurance between ages 0-30 is a wise financial decision, providing lifelong protection and serving as a long-term savings and investment tool for future security."],
+            'Example': "As a young person, if you buy a permanent life insurance policy, its tax-deferred cash value grows with each premium. You can later use this for anything you want. Additionally, your beneficiaries get a tax-free death benefit."
         },
         'DISABILITY INSURANCE': {
-            'Definition': "Disability insurance is a financial safety net that provides you with regular income if you become unable to work due to an illness or injury.",
+            'What Is It?': "Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.",
             'Reason': ["Young adults entering the workforce face the risk of accidents or illnesses that could disrupt their income flow."],
             'Example': "Imagine you're 22 years old and you injure your back in a car accident, making it impossible to do your job for several months. Disability insurance would provide you with a portion of your salary during this time, allowing you to focus on your recovery without worrying about your finances."
         },
         'AUTO INSURANCE': {
-            'Definition': "Auto insurance is a financial safety net that helps protect you and others in case of accidents involving your vehicle.",
-            'Reason': ["Auto insurance is essential because it's the law in most places, and it shields you from potentially devastating financial consequences. It covers medical bills, repairs, and liability costs, which can add up to thousands of dollars if you're in an accident."],
-            'Example': "If you're a 29-year-old driver and rear-end a car, without insurance, you'd cover both parties' damages and medical bills. Auto insurance protects you from this financial burden."
+            'What Is It?': "Auto insurance provides financial protection and peace of mind, ensuring you wont bear the burden of costly accidents or damages on your own.",
+            'Reason': ["Car insurance is essential because it's the law in most places, and it shields you from potentially devastating financial consequences. It covers medical bills, repairs, and liability costs, which can add up to thousands of dollars if you're in an accident."],
+            'Example': "If you're on the road and rear-end a car or your car is damaged, auto insurance protects you from this financial burden."
         },
         'HOMEOWNERS INSURANCE': {
-            'Definition': "Homeowners insurance is a type of coverage that protects you financially if you own a home. It typically covers damages to your house, personal belongings, and provides liability protection.",
+            'What Is It?': "Your home is your biggest investment. You should protect it ageinst catastrophes. Homeowners insurance ensures that your home and belongings are covered in case of unexpected disasters or accidents.",
             'Reason': ["Having homeowners insurance is crucial for young adults because it safeguards your investment in a home, shields you from unexpected disasters, and even covers you in case of certain accidents on your property."],
-            'Example': "At 21, you buy your first house. A wildfire damages it. Without homeowners insurance, you face a huge repair bill, risking bankruptcy. With insurance, repairs are covered, saving you from severe financial strain."
+            'Example': "At a young age, you buy your first house. A wildfire damages it. Without homeowners insurance, you face a huge repair bill, risking bankruptcy. With insurance, repairs are covered, saving you from severe financial strain."
         },
         'RENTERS INSURANCE': {
-            'Definition': "Renters insurance is a type of coverage that protects individuals who rent their homes or apartments. It typically includes coverage for personal belongings, liability protection, and additional living expenses in case your rented home becomes uninhabitable due to a covered event.",
-            'Reason': ["If you're between the ages of 18-30 and renting a place to live, renters insurance is essential because it safeguards your personal belongings and financial well-being. It's not just about being responsible; it's about ensuring you're covered when unexpected events occur."],
-            'Example': "If you're a young person in a rented apartment and a neighboring fire damages your belongings, without renters insurance, you'd face huge replacement costs. With insurance, those costs are likely covered, providing a financial safety net for life's surprises."
+            'Definition': "Renters insurance has more value than meets the eye. Protecting both the renter and the landlord, this policyRenters insurance provides affordable peace of mind. By ensuring your belongings are protected in case of unexpected events like fire, theft, or natural disasters. It also covers liability if someone is injured in your residence. For a small monthly fee, you can safeguard your financial future and replace your possessions, making it a smart and responsible choice for any renter.",
+            'Reason': ["If you're under 30 and renting a place to live, renters insurance is essential because it safeguards your personal belongings and reduces your financial liability in the event you cause major damage."],
+            'Example': "You're a young person in a rented apartment and a neighboring fire damages your belongings, without renters insurance, you'd face huge replacement costs. With insurance, those costs are likely covered, providing a financial safety net for life's surprises."
         },
-        'Personal Articles Policy': {
+        'PERSONAL ARTICLES POLICY': {
             'Definition': "Insures specific valuable items, such as jewelry or musical instruments.",
-            'Reason': ["Adults aged 18-30 should get a personal articles policy to better protect valuables like electronics or jewelry, as regular insurance might not fully cover them against theft, loss, or damage."],
+            'Reason': ["Adults in your age range should get a personal articles policy to better protect valuables like electronics or jewelry, as regular insurance might not fully cover them against theft, loss, or damage."],
             'Example': "If you're passionate about photography with a $2,000 camera that gets stolen on vacation, standard renters or homeowners insurance might not fully cover its value. However, a personal articles policy ensures full coverage, saving you significant out-of-pocket costs."
         },
         'HOSPITAL INCOME POLICY': {
-            'Definition': "A hospital income policy is a type of insurance that provides financial support in case you are hospitalized due to illness or injury. It offers a daily or weekly cash benefit to help cover expenses related to their hospital stay.",
+            'Definition': "Hospital income insurance pays you during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Consider this, especially if you have an active child who plays sports.",
             'Reason': ["Young adults should consider a hospital income policy to safeguard their finances during unexpected hospital stays, especially if they lack significant savings or comprehensive health insurance."],
-            'Example': "If hospitalized unexpectedly for a week, health insurance may cover medical bills but not daily expenses like transport and meals. A hospital income policy provides a daily cash benefit during your stay, ensuring you can focus on recovery without financial worries."
+            'Example': "If hospitalized unexpectedly for a week, health insurance may cover medical bills but not daily expenses like bills and meals. A hospital income policy provides a daily cash benefit during your stay, ensuring you can focus on recovery without financial worries."
         },
         'PERSONAL LIABILITY UMBRELLA POLICY': {
-            'Definition': "A personal liability umbrella policy is a type of insurance that provides additional coverage beyond what your standard auto, home, or renters insurance policies offer. It acts as a safety net to protect your assets and future earnings in case you're involved in a major liability lawsuit.",
+            'Definition': "A $1 umbrella may be a better option than maxing out the limits of your other policies. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.",
             'Reason': ["Young adults need a personal liability umbrella policy to protect their future earnings and assets from potential lawsuits. Without it, their savings, future income, and personal property are at risk."],
-            'Example': "If you're under 30 with some savings and cause a car accident leading to injuries costing $500,000, your auto insurance may only cover $100,000. Without an umbrella policy, you'd owe the remaining $400,000, risking your savings and future wages. An umbrella policy would cover this extra cost, safeguarding your finances."
+            'Example': "If you're under 30 with some savings and cause a car accident leading to injuries costing $500,000, your auto insurance may not fully cover the damages. Without an umbrella policy, you'd be risking your savings and future wages. An umbrella policy covers extra cost, safeguarding your finances."
         },
         'PET MEDICAL INSURANCE': {
-            'Definition': "Pet medical insurance is a type of coverage that helps pay for the cost of veterinary care for your pets, such as dogs or cats, in case they get sick or injured.",
-            'Reason': ["Many young adults adopt pets. Pet medical insurance provides financial protection and peace of mind. It helps ensure that they can afford unexpected medical expenses for their beloved furry companions without breaking the bank."],
-            'Example': "If you're a 28-year-old with a dog named Max who unexpectedly swallows a foreign object, you could face a $3,000 vet bill. Without pet insurance, this means draining savings or accruing debt. With insurance, you pay a small deductible and the rest is covered, sparing you financial strain in a stressful situation."
+            'Definition': "If you love your pet, you will consider Pet medical insurance. To ensure your furry friend gets the best care without breaking the bank in unexpected emergencies.",
+            'Reason': ["Many young adults have pets. Pet medical insurance provides financial protection and peace of mind. It helps ensure that they can afford unexpected medical expenses for their beloved furry companions without breaking the bank."],
+            'Example': "If you're dog named Max unexpectedly swallows a foreign object, you could face a $3,000 vet bill. Without pet insurance, this means draining savings or accruing debt. With insurance, you pay a small deductible and the rest is covered, sparing you financial strain in a stressful situation."
         },
         'RENTAL DWELLING INSURANCE': {
             'Definition': "Landlord insurance is a specialized insurance policy designed for individuals who own rental properties. It provides financial protection for landlords in various situations related to their rental properties.",
