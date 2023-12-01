@@ -209,7 +209,7 @@ def submit_form():
             'Example': "At a young age, you buy your first house. A wildfire damages it. Without homeowners insurance, you face a huge repair bill, risking bankruptcy. With insurance, repairs are covered, saving you from severe financial strain."
         },
         'RENTERS INSURANCE': {
-            'Definition': "Renters insurance has more value than meets the eye. Protecting both the renter and the landlord, this policyRenters insurance provides affordable peace of mind. By ensuring your belongings are protected in case of unexpected events like fire, theft, or natural disasters. It also covers liability if someone is injured in your residence. For a small monthly fee, you can safeguard your financial future and replace your possessions, making it a smart and responsible choice for any renter.",
+            'Definition': "Renters insurance has more value than meets the eye. Protecting both the renter and the landlord, this policy ensures your belongings are protected in case of unexpected events like fire, theft, or natural disasters. It also covers liability if someone is injured in your residence.",
             'Reason': ["If you're under 30 and renting a place to live, renters insurance is essential because it safeguards your personal belongings and reduces your financial liability in the event you cause major damage."],
             'Example': "You're a young person in a rented apartment and a neighboring fire damages your belongings, without renters insurance, you'd face huge replacement costs. With insurance, those costs are likely covered, providing a financial safety net for life's surprises."
         },
