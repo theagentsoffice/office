@@ -189,22 +189,22 @@ def submit_form():
         policy_data = {
     '0-30': {
         'LIFE INSURANCE': {
-            'What Is It?': "Permanent life insurance provides lifelong coverage with a growing cash value component, as long as premiums are paid.",
+            'Definition': "Permanent life insurance provides lifelong coverage with a growing cash value component, as long as premiums are paid.",
             'Reason': ["Acquiring permanent life insurance between ages 0-30 is a wise financial decision, providing lifelong protection and serving as a long-term savings and investment tool for future security."],
             'Example': "As a young person, if you buy a permanent life insurance policy, its tax-deferred cash value grows with each premium. You can later use this for anything you want. Additionally, your beneficiaries get a tax-free death benefit."
         },
         'DISABILITY INSURANCE': {
-            'What Is It?': "Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.",
+            'Definition': "Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.",
             'Reason': ["Young adults entering the workforce face the risk of accidents or illnesses that could disrupt their income flow."],
             'Example': "Imagine you're 22 years old and you injure your back in a car accident, making it impossible to do your job for several months. Disability insurance would provide you with a portion of your salary during this time, allowing you to focus on your recovery without worrying about your finances."
         },
         'AUTO INSURANCE': {
-            'What Is It?': "Auto insurance provides financial protection and peace of mind, ensuring you wont bear the burden of costly accidents or damages on your own.",
+            'Definition': "Auto insurance provides financial protection and peace of mind, ensuring you wont bear the burden of costly accidents or damages on your own.",
             'Reason': ["Car insurance is essential because it's the law in most places, and it shields you from potentially devastating financial consequences. It covers medical bills, repairs, and liability costs, which can add up to thousands of dollars if you're in an accident."],
             'Example': "If you're on the road and rear-end a car or your car is damaged, auto insurance protects you from this financial burden."
         },
         'HOMEOWNERS INSURANCE': {
-            'What Is It?': "Your home is your biggest investment. You should protect it ageinst catastrophes. Homeowners insurance ensures that your home and belongings are covered in case of unexpected disasters or accidents.",
+            'Definition': "Your home is your biggest investment. You should protect it ageinst catastrophes. Homeowners insurance ensures that your home and belongings are covered in case of unexpected disasters or accidents.",
             'Reason': ["Having homeowners insurance is crucial for young adults because it safeguards your investment in a home, shields you from unexpected disasters, and even covers you in case of certain accidents on your property."],
             'Example': "At a young age, you buy your first house. A wildfire damages it. Without homeowners insurance, you face a huge repair bill, risking bankruptcy. With insurance, repairs are covered, saving you from severe financial strain."
         },
