@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}'s P.I.P.R.E. Outcome</title>
+    <style>
+        /* Add your custom styles here */
+        .accordion {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background-color: #f1f1f1;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .accordion-content {
+            padding: 10px;
+            display: none;
+        }
+
+        h3, p {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="right-container">
+        <div class="right">
+            <h1>{{name}}'s P.I.P.R.E. Outcome</h1>
+            <h4>Based on the information provided by you, the following are the suggested insurance policies you may wish to further explore and consider:</h4>
+
+            <ul>
+                {% for policy, data in policies.items() %}
+                <li class="accordion">
+                    <div class="accordion-header">
+                        <h3>{{ policy }}</h3>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>Definition:</strong> {{ data['Definition'] }}</p>
+                        <p><strong>Reason:</strong> {{ data['Reason'][0] }}</p>
+                        <p><strong>Example:</strong> {{ data['Example'] }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+
+            
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.accordion-header').click(function() {
+                var accordion = $(this).parent('.accordion');
+                accordion.find('.accordion-content').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

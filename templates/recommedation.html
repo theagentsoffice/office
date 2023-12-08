@@ -252,6 +252,26 @@ from, to { border-color: transparent; }
 }
 
 
+.accordion {
+            margin-bottom: 15px;
+            border: 1px solid rgb(0, 42, 255);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background-color: rgb(5, 9, 239);
+            padding: 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .accordion-content {
+            padding: 10px;
+            display: none;
+        }
+
+
     </style>
 </head>
 <body>
@@ -271,11 +291,10 @@ from, to { border-color: transparent; }
 
 
                 Congratulations for proactively seeking measures to fortify your financial position against unforeseen adverse events or potential financial calamities. 
-                
             <br>
 <!--                 
                 <br> <span> </span>
-                Engage with The Personalized Insurance Policy Recommendation Engine now and let us do the work for you!
+                Engage with The Personalized Insurance Policy Recommendation Engine now and let us do the work for you
                  -->
                 </h3>
             <p>
@@ -287,35 +306,43 @@ from, to { border-color: transparent; }
             <h1>{{name}}'s P.I.P.R.E. Outcome</h1>
             <h4  >Based on the information provided by you, the following are the suggested insurance policies you may wish to further explore and consider:
                 </h4>
-
+                <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                 
                 <h5 >
                     <p>
 
 
-
-                        <ul>
-                        {% for policy, data in policies.items() %}
-                        <li>
-                        <h3 style='font-size: 21px;'>{{ policy }}</h3>
-                        <p><strong style='font-size: 17px;'>Definition:</strong> {{ data['Definition'] }}</p>
-                        <p><strong style='font-size: 17px;'>Reason:</strong> {{ data['Reason'][0] }}</p>
-                        <p><strong style='font-size: 17px;'>Example:</strong> {{ data['Example'] }}</p>
-                        <!-- <p><strong style='font-size: 17px;'></strong> {{ data['Definition'] }}</p>
-                        <p><strong style='font-size: 17px;'>Reason:</strong> {{ data['Reason'][0] }}</p>
-                        <p><strong style='font-size: 17px;'>Example:</strong> {{ data['Example'] }}</p> -->
-                        </li>
+                                <ul>
+                                    {% for policy, data in policies.items() %}
+                                    <li class="accordion">
+                                        <div class="accordion-header">
+                                            <h3>{{ policy }}</h3>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <p><strong>Definition:</strong> {{ data['Definition'] }}</p>
+                                            <p><strong>Reason:</strong> {{ data['Reason'][0] }}</p>
+                                            <p><strong>Example:</strong> {{ data['Example'] }}</p>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                    
+                        
+                    
+                       
                         
                         
-                        
-                        {% endfor %}
-                        
-                        
-                        
-                        </ul></p></h5>
+                        </p></h5>
                     
 
-                    
+                     <script>
+                            $(document).ready(function() {
+                                $('.accordion-header').click(function() {
+                                    var accordion = $(this).parent('.accordion');
+                                    accordion.find('.accordion-content').slideToggle();
+                                });
+                            });
+                        </script>
                     <!-- <p>Policy Descriptions:</p>
                     <ul>
                         {% for description in descriptions %}
