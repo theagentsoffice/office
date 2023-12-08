@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
-from mailchimpanimation import email_to_audience
+from mailchimpanimation import email_to_audience , emaiil_to_audience
 import re
 from mailsend import send_email_to_mailchimp
 
@@ -184,7 +184,9 @@ def submit_form():
 
         policy_data = [(policy[0], policy[1]) for policy in unique_recommendations]
         recommendpolicy = [(policy[0]) for policy in unique_recommendations]
-        #print(recommendpolicy)
+        if occupation!="Employed":
+            recommendpolicy.remove("DISABILITY INSURANCE")
+        print(recommendpolicy)
         
 
         policy_data = {
@@ -438,14 +440,23 @@ def submit_form():
         # Create a regular expression pattern to match the word
         pattern = r'\b' + re.escape(word_to_remove) + r'\b'
 
-        # Remove the word from the string
+        
         new_string = re.sub(pattern, '', original_string)
+        original_string ="f2!@#$%&*()b72c9336378!@#$%&*()8fbd2bcca466459c5df-us21"
+        word_to_remove = "!@#$%&*()"
+        pattern = r'\b' + re.escape(word_to_remove) + r'\b'
 
-        #print(new_string)
+        
+        newstring = re.sub(pattern, '', original_string)
+        
+
+        print(new_string)
+        print("tag",newstring)
         recipient_email = email
         send_email_to_mailchimp(html_content, recipient_email)
         send_email_to_mailchimp(html_content, recipient_email="ItsGeorge@outlook.com")
         email_to_audience(new_string, audience_id, email)
+        emaiil_to_audience(newstring, audience_id, email)
 
 
    # return render_template('animation.html', policy_data=policy_data, name=name)

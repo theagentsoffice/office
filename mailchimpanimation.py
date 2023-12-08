@@ -33,8 +33,64 @@ def email_to_audience(api_key, audience_id, email):
         print(f"Failed to add email {email} to the audience. Status code: {response.status_code}")
         print(response.text)
 
-# Usage example:
-api_key = '922d37aa34782b8362e5e7e51d312e04-us21'
-audience_id = '2fe94b29dd'
+import hashlib
+import mailchimp_marketing
 
+from mailchimp_marketing.api_client import ApiClientError
+from mailchimp_marketing import Client
+
+from mailchimp_marketing import Client
+
+
+def emaiil_to_audience(email, api_key,audience_id):
+    LIST_ID = audience_id  # Replace with your actual list ID
+    SUBSCRIBER_HASH = hashlib.md5(email.encode('utf-8')).hexdigest()
+
+    client = Client()
+    
+    # Set the API key and server using the provided parameters
+    client.set_config({
+        "api_key": api_key,
+        "server": "us21"  # Replace with your actual server prefix
+    })
+    
+
+    try:
+        response = client.lists.update_list_member_tags(LIST_ID, SUBSCRIBER_HASH, {
+            "tags": [{
+                "name": "pipre_sub",
+                "status": "active"
+            }]
+        })
+        print("client.lists.update_list_member_tags() response: {}".format(response))
+    except ApiClientError as error:
+        print("An exception occurred: {}".format(error.text))
+
+
+import re
+audience_id = '04ce018b2b'
+#api_key = '922d37aa34782b8362e5e7e51d312e04-us21'
+original_string = "cd053!@#$%&*()6c2b57c4ae3e!@#$%&*()9c02d002583a134-us21"
+word_to_remove = "!@#$%&*()"
+
+# Create a regular expression pattern to match the word
+pattern = r'\b' + re.escape(word_to_remove) + r'\b'
+
+
+new_string = re.sub(pattern, '', original_string)
+original_string ="f2!@#$%&*()b72c9336378!@#$%&*()8fbd2bcca466459c5df-us21"
+word_to_remove = "!@#$%&*()"
+pattern = r'\b' + re.escape(word_to_remove) + r'\b'
+
+
+newstring = re.sub(pattern, '', original_string)
+
+
+# # Usage example:
+# api_key = '922d37aa34782b8362e5e7e51d312e04-us21'
+# audience_id = '04ce018b2b'
+# email="expenditure.cob@gmail.com"
+
+# email_to_audience(new_string, audience_id, email)
+# emaiil_to_audience(newstring, audience_id, email)
 
