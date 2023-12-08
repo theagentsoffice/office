@@ -271,6 +271,10 @@ from, to { border-color: transparent; }
             display: none;
         }
 
+        . li {
+    list-style-type: none;
+}
+
 
     </style>
 </head>
@@ -312,9 +316,9 @@ from, to { border-color: transparent; }
                     <p>
 
 
-                                <ul>
+                                
                                     {% for policy, data in policies.items() %}
-                                    <li class="accordion">
+                                    <div class="accordion">
                                         <div class="accordion-header">
                                             <h3>{{ policy }}</h3>
                                         </div>
@@ -323,9 +327,9 @@ from, to { border-color: transparent; }
                                             <p><strong>Reason:</strong> {{ data['Reason'][0] }}</p>
                                             <p><strong>Example:</strong> {{ data['Example'] }}</p>
                                         </div>
-                                    </li>
+                                    </div>
                                     {% endfor %}
-                                </ul>
+                               
                     
                         
                     
