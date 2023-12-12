@@ -183,7 +183,7 @@ def submit_form():
 
         policy_data = [(policy[0], policy[1]) for policy in unique_recommendations]
         recommendpolicy = [(policy[0]) for policy in unique_recommendations]
-        if occupation!="Employed":
+        if occupation!="Employed" or occupation!="Self-Employed":
             recommendpolicy.remove("DISABILITY INSURANCE")
         print(recommendpolicy)
         
