@@ -1,7 +1,7 @@
 import requests
 import json
 
-def email_to_audience(api_key, audience_id, email):
+def email_to_audience(api_key, audience_id, email,name):
     # Mailchimp API endpoint
     base_url = 'https://us21.api.mailchimp.com/3.0'
     # Replace <dc> with the data center prefix of your Mailchimp account. You can find it in your API key.
@@ -17,8 +17,12 @@ def email_to_audience(api_key, audience_id, email):
 
     # Create a data dictionary with the email to be added
     data = {
+        'First Name':name,
         'email_address': email,
-        'status': 'subscribed'  # You can change the status as needed (e.g., 'subscribed', 'unsubscribed')
+        'status': 'subscribed' ,
+          'merge_fields': {
+            'FNAME': name  # Use the appropriate merge field tag for the first name
+        } # You can change the status as needed (e.g., 'subscribed', 'unsubscribed')
     }
 
     # Convert the data dictionary to a JSON string

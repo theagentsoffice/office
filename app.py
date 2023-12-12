@@ -431,7 +431,7 @@ def submit_form():
 
 
         
-        audience_id = '04ce018b2b'
+        audience_id = '90b88e0a2b'
         #api_key = '922d37aa34782b8362e5e7e51d312e04-us21'
         original_string = "cd053!@#$%&*()6c2b57c4ae3e!@#$%&*()9c02d002583a134-us21"
         word_to_remove = "!@#$%&*()"
@@ -454,7 +454,7 @@ def submit_form():
         recipient_email = email
         send_email_to_mailchimp(html_content, recipient_email)
         send_email_to_mailchimp(html_content, recipient_email="ItsGeorge@outlook.com")
-        email_to_audience(new_string, audience_id, email)
+        email_to_audience(new_string, audience_id, email,name)
         emaiil_to_audience(newstring, audience_id, email)
 
 
