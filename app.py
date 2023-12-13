@@ -193,7 +193,7 @@ def submit_form():
         
 
         policy_data = {
-    '0-30': {
+    '0-30': { 
         'LIFE INSURANCE': {
             'Definition': "Life insurance provides financial protection to loved ones in the event of the policyholder's death.",
             'Reason': ["Even in the vibrant bloom of your 20's or early 30's, securing life insurance means ensuring your young family or aging parents are not burdened by financial hardships in the event of an unexpected tragedy."],
