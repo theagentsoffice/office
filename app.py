@@ -195,216 +195,199 @@ def submit_form():
         policy_data = {
     '0-30': {
         'LIFE INSURANCE': {
-            'Definition': "Permanent life insurance provides lifelong coverage with a growing cash value component, as long as premiums are paid.",
-            'Reason': ["Acquiring permanent life insurance between ages 0-30 is a wise financial decision, providing lifelong protection and serving as a long-term savings and investment tool for future security."],
-            'Example': "As a young person, if you buy a permanent life insurance policy, its tax-deferred cash value grows with each premium. You can later use this for anything you want. Additionally, your beneficiaries get a tax-free death benefit."
+            'Definition': "Life insurance provides financial protection to loved ones in the event of the policyholder's death.",
+            'Reason': ["Even in the vibrant bloom of your 20's or early 30's, securing life insurance means ensuring your young family or aging parents are not burdened by financial hardships in the event of an unexpected tragedy."],
+            'Example': "A 28-year-old software engineer, recently married and planning a family, opts for life insurance to ensure financial security for their spouse in the event of an unexpected tragedy"
         },
         'DISABILITY INSURANCE': {
-            'Definition': "Spend less than 1 percent of your income to protect up to 100 percent of it. Get paid for short-term injuries. Long-term policies safeguard against extended illnesses or injury, ensuring financial stability during tough times.",
-            'Reason': ["Young adults entering the workforce face the risk of accidents or illnesses that could disrupt their income flow."],
-            'Example': "Imagine you're 22 years old and you injure your back in a car accident, making it impossible to do your job for several months. Disability insurance would provide you with a portion of your salary during this time, allowing you to focus on your recovery without worrying about your finances."
+            'Definition': "This replaces your income if you're unable to work due to an illness or injury.",
+            'Reason': ["As you embark on the most dynamic years of your career, disability insurance acts as a safeguard, protecting your dreams and financial independence against the unforeseen disruptions of illness or injury."],
+            'Example': "A 30-year-old freelance graphic designer chooses disability insurance to protect their income, as their job is their sole source of financial support and they have no other safety net."
         },
         'AUTO INSURANCE': {
-            'Definition': "Auto insurance provides financial protection and peace of mind, ensuring you wont bear the burden of costly accidents or damages on your own.",
-            'Reason': ["Car insurance is essential because it's the law in most places, and it shields you from potentially devastating financial consequences. It covers medical bills, repairs, and liability costs, which can add up to thousands of dollars if you're in an accident."],
-            'Example': "If you're on the road and rear-end a car or your car is damaged, auto insurance protects you from this financial burden."
+            'Definition': "Covers financial losses due to vehicle accidents or theft.",
+            'Reason': ["In your adventurous twenties and early thirties, when road trips and new opportunities call, auto insurance is your silent co-pilot, offering peace of mind against the unpredictable twists and turns of the road."],
+            'Example': "A 23-year-old college graduate, who just bought their first car for commuting to their new job, purchases auto insurance to comply with state laws and safeguard against potential accidents."
         },
         'HOMEOWNERS INSURANCE': {
-            'Definition': "Your home is your biggest investment. You should protect it ageinst catastrophes. Homeowners insurance ensures that your home and belongings are covered in case of unexpected disasters or accidents.",
-            'Reason': ["Having homeowners insurance is crucial for young adults because it safeguards your investment in a home, shields you from unexpected disasters, and even covers you in case of certain accidents on your property."],
-            'Example': "At a young age, you buy your first house. A wildfire damages it. Without homeowners insurance, you face a huge repair bill, risking bankruptcy. With insurance, repairs are covered, saving you from severe financial strain."
+            'Definition': "Protects against damage to one's home and its contents.",
+            'Reason': ["As you lay the foundation of your first home, homeowners insurance is the invisible shield protecting your sanctuary and the precious memories yet to be made within its walls."],
+            'Example': "A 29-year-old first-time homeowner acquires homeowners insurance to protect their investment in their new house and cover potential damages or losses."
         },
         'RENTERS INSURANCE': {
-            'Definition': "Renters insurance has more value than meets the eye. Protecting both the renter and the landlord, this policy ensures your belongings are protected in case of unexpected events like fire, theft, or natural disasters. It also covers liability if someone is injured in your residence.",
-            'Reason': ["If you're under 30 and renting a place to live, renters insurance is essential because it safeguards your personal belongings and reduces your financial liability in the event you cause major damage."],
-            'Example': "You're a young person in a rented apartment and a neighboring fire damages your belongings, without renters insurance, you'd face huge replacement costs. With insurance, those costs are likely covered, providing a financial safety net for life's surprises."
+            'Definition': "Covers damage or loss of personal property for those renting a living space.",
+            'Reason': ["In the flux of your twenties and early thirties, as you explore and settle in new places, renters insurance is your steadfast ally, guarding your belongings and your peace of mind in every new chapter."],
+            'Example': "A 25-year-old renting an apartment in a bustling city obtains renters insurance to cover personal belongings and potential liabilities, as the landlord's policy does not cover tenant possessions."
         },
-        'PERSONAL ARTICLES POLICY': {
+        'Personal Articles Policy': {
             'Definition': "Insures specific valuable items, such as jewelry or musical instruments.",
-            'Reason': ["Adults in your age range should get a personal articles policy to better protect valuables like electronics or jewelry, as regular insurance might not fully cover them against theft, loss, or damage."],
-            'Example': "If you're passionate about photography with a $2,000 camera that gets stolen on vacation, standard renters or homeowners insurance might not fully cover its value. However, a personal articles policy ensures full coverage, saving you significant out-of-pocket costs."
+            'Reason': ["Your personal articles, whether they be electronics, jewelry, or musical instruments, are not just items but a part of your young life’s story, and insuring them means preserving your memories and investments."],
+            'Example': "A 27-year-old avid photographer, owning expensive camera equipment, secures a personal articles policy to protect their gear from theft or damage both at home and while traveling."
         },
         'HOSPITAL INCOME POLICY': {
-            'Definition': "Hospital income insurance pays you during hospital stays, easing the burden of medical bills and allowing you to focus on your recovery or providing care for an injured family member. Consider this, especially if you have an active child who plays sports.",
-            'Reason': ["Young adults should consider a hospital income policy to safeguard their finances during unexpected hospital stays, especially if they lack significant savings or comprehensive health insurance."],
-            'Example': "If hospitalized unexpectedly for a week, health insurance may cover medical bills but not daily expenses like bills and meals. A hospital income policy provides a daily cash benefit during your stay, ensuring you can focus on recovery without financial worries."
+            'Definition': "Provides a daily stipend if hospitalized.",
+            'Reason': ["Young adults often don't anticipate hospital stays, but a hospital income policy can alleviate the financial strain of unexpected medical events, allowing you to focus on recovery instead of expenses."],
+            'Example': "A 24-year-old, conscious of potential health issues and high medical costs, takes out a hospital income policy to ensure a steady income during prolonged hospital stays."
         },
         'PERSONAL LIABILITY UMBRELLA POLICY': {
-            'Definition': "A $1 umbrella may be a better option than maxing out the limits of your other policies. Imagine a scenario where your child accidentally injures a friend while playing, or your pet causes harm to someone.",
-            'Reason': ["Young adults need a personal liability umbrella policy to protect their future earnings and assets from potential lawsuits. Without it, their savings, future income, and personal property are at risk."],
-            'Example': "If you're under 30 with some savings and cause a car accident leading to injuries costing $500,000, your auto insurance may not fully cover the damages. Without an umbrella policy, you'd be risking your savings and future wages. An umbrella policy covers extra cost, safeguarding your finances."
+            'Definition': "Provides additional liability coverage above what's offered by homeowners or auto insurance.",
+            'Reason': ["At a time when your personal and professional worlds are expanding rapidly, a personal liability umbrella policy is your safety net, ensuring that one misstep doesn’t derail the journey you’ve just begun."],
+            'Example': "A 31-year-old entrepreneur, aware of the risks associated with personal liabilities exceeding standard insurance limits, invests in a personal liability umbrella policy for additional coverage."
         },
         'PET MEDICAL INSURANCE': {
-            'Definition': "If you love your pet, you will consider Pet medical insurance. To ensure your furry friend gets the best care without breaking the bank in unexpected emergencies.",
-            'Reason': ["Many young adults have pets. Pet medical insurance provides financial protection and peace of mind. It helps ensure that they can afford unexpected medical expenses for their beloved furry companions without breaking the bank."],
-            'Example': "If you're dog named Max unexpectedly swallows a foreign object, you could face a $3,000 vet bill. Without pet insurance, this means draining savings or accruing debt. With insurance, you pay a small deductible and the rest is covered, sparing you financial strain in a stressful situation."
-        },
-        'RENTAL DWELLING INSURANCE': {
-            'Definition': "Landlord insurance is a specialized insurance policy designed for individuals who own rental properties. It provides financial protection for landlords in various situations related to their rental properties.",
-            'Reason': ["If you're between the ages of 18-30 and own a rental property, landlord insurance is essential to safeguard your investment. It helps cover potential financial losses and liabilities that can arise from renting out your property to tenants."],
-            'Example': "If you're a 25-year-old with a rented apartment and a burst pipe causes damage, without landlord insurance you'd bear repair costs and lose rent. With insurance, you can claim both repair costs and lost rent, preventing a major financial loss."
+            'Definition': "Covers medical expenses for pets.",
+            'Reason': ["As you experience the joys of pet companionship in your youth, pet medical insurance compassionately assures that your furry friend’s health can be cared for, without financial strain, in every shared adventure."],
+            'Example': "A 26-year-old pet owner, dedicated to their dog's health and well-being, decides to get pet medical insurance to help cover veterinary expenses and emergencies."
         },
     },
     '31-60': {
     'LIFE INSURANCE': {
         'Definition': "Life insurance is a contract between an individual and an insurance company, where the insurer promises to pay a sum of money to beneficiaries upon the death of the insured.",
         'Reason': [
-            "Most people in the 31-60 age bracket are in their prime working years. They often have dependents—like children, spouses, or even aging parents.",
+            "At this stage of life, securing the future of your loved ones with life insurance becomes a poignant reminder of the responsibilities you carry for those who depend on you.",
             "These individuals might have mortgages, car loans, or even student loans that need to be paid off.",
             "As one progresses through this age range, the risk of health issues or unexpected demise increases."
         ],
-        'Example':"A 40-year-old with young children might buy life insurance to ensure that their kids can go to college if something happens to them."
+        'Example':"At age 45, with two children in college, Juanita decides to get a life insurance policy to ensure her family's financial stability in case of her unexpected passing."
            
         
     },
     'DISABILITY INSURANCE': {
         'Definition': "It's insurance that will provide income should you become disabled and unable to work.",
         'Reason': [
-            "This age group is heavily reliant on their income, whether it's for supporting a family, paying off debts, or saving for retirement.",
+            "The uncertainty of health in these prime years makes disability insurance a crucial safeguard, ensuring that an unexpected illness or injury doesn't derail your financial stability.",
             "The likelihood of disability due to illness or injury increases with age."
         ],
-        'Example':"A 35-year-old construction worker might get this insurance because their job is physically demanding."
+        'Example':"Mark, a 38-year-old software developer, opts for disability insurance to protect his income in case he's unable to work due to a long-term illness or injury."
            
         
     },
     'AUTO INSURANCE': {
         'Definition': "It covers your potential liabilities while operating a vehicle, including damages to others or their property.",
         'Reason': [
-            "Individuals between 31-60 are often on the roads, driving kids around, commuting, or taking trips.",
+            "Navigating the roads of life's busiest years, auto insurance stands as a necessary shield against the unforeseen mishaps that can occur on the journey.",
             "As assets grow, so does the need to protect against potential lawsuits."
         ],
         'Example': 
-            "A 45-year-old might need it not just for daily commutes, but also for those family road trips."
+            "Suzanne, 54, purchases auto insurance for her new car to cover potential damages or liability in case of an accident."
            
         
     },
     'HOMEOWNERS INSURANCE POLICY': {
         'Definition': "This insurance covers damages to your house and belongings inside, as well as potential liabilities.",
         'Reason': [
-            "Many in this age bracket own homes.",
+            "Owning a home at your age is a testament to your hard work, and homeowners insurance protects this significant investment from life's unpredictable events",
             "A home is often the most valuable asset someone possesses."
         ],
         'Example': 
-            "If a storm damages a 52-year-old's roof, homeowners insurance can help cover repairs."
+            "At 47, Kevin buys homeowners insurance to protect his newly acquired house and belongings from risks like fire, theft, or natural disasters."
            
         
     },
     'RENTERS INSURANCE': {
         'Definition': "This covers damages to or theft of personal property in a rented space.",
         'Reason': [
-            "Not everyone in this age range owns a home; many rent apartments or houses.",
+            "In the midst of life's transitions, renters insurance provides a sense of security, safeguarding your personal belongings against loss or damage in your rental space.",
             "They might have accumulated valuable belongings over the years."
         ],
         'Example': 
-            "If a 33-year-old's apartment gets burglarized, renters insurance can cover the loss."
+            "Priya, 33, living in a rented apartment in the city, secures renters insurance to cover her personal possessions and potential liability claims."
            
         
     },
     'PERSONAL ARTICLES POLICY': {
         'Definition': "This insurance covers high-value items, like jewelry, art, or electronics.",
         'Reason': [
-            "Over the years, individuals might acquire more luxury or valuable items.",
+            "With personal achievements often reflected in valuable possessions, a personal articles policy becomes essential to protect these symbols of your life's journey.",
             "These items might not be fully covered under standard homeowners or renters insurance."
         ],
         'Example': 
-            "A 44-year-old might insure an heirloom necklace passed down through generations."
+            "To insure her valuable jewelry collection against loss or theft, 42-year-old Linda takes out a personal articles policy."
            
         
     },
     'HOSPITAL INCOME POLICY': {
         'Definition': "It provides a daily, weekly, or monthly cash benefit during hospital stays.",
         'Reason': [
-            "As age progresses, hospital visits might become more frequent.",
+            "As one navigates the middle chapters of life, a hospital income policy offers financial reassurance during times of health crises, ensuring stability when it's most needed.",
             "The cash can offset loss of income or out-of-pocket expenses during hospitalization."
         ],
         'Example': 
-            "A 58-year-old undergoing surgery might rely on this policy to cover extra costs not handled by health insurance."
+            "As a self-employed contractor at 59, Tom invests in a hospital income policy to supplement his income in case he needs to be hospitalized and cannot work."
            
         
     },
     'PERSONAL LIABILITY UMBRELLA POLICY': {
         'Definition': "This provides additional liability coverage above the limits of homeowners, auto, and boat insurance policies.",
         'Reason': [
-            "As wealth grows, so does the potential target on one's back for lawsuits.",
+            "With increasing assets and responsibilities during these years, a personal liability umbrella policy provides an extra layer of protection against the potential legal and financial storms of life.",
             "This age group often has more assets to protect."
         ],
         'Example': 
-            "A 46-year-old with a swimming pool might get this in case of an accident involving a guest."
+            "Emily, a 46-year-old with a swimming pool, might get this in case of an accident involving a guest."
           
         
     },
     'PET MEDICAL INSURANCE': {
-        'Definition': "Pet medical insurance is a policy that covers the cost of veterinary care for pets, including dogs and cats.",
+        'Definition': "It helps cover the costs of veterinary care for pets.",
         'Reason': [
-            "Having pet medical insurance between ages 31-60 is essential because as pets age, they are more likely to develop health issues, and medical expenses can become a significant financial burden.",
+            "As cherished companions often become part of the family, pet medical insurance ensures that your furry friends receive the care they need without straining your finances.",
             "As pets age, their medical needs can grow, and so can the expenses."
         ],
         'Example': 
-            "For instance, a 45-year-old pet owner might need insurance for their aging dog, who requires surgery for a tumor removal, and without insurance, the procedure could cost thousands of dollars, potentially straining their budget."
-            
+            "Alex, 36, and an avid animal lover, decides to get pet medical insurance for his two dogs to help manage veterinary costs in case of illness or injury."
             
         
-    },
-    'RENTAL DWELLING INSURANCE': {
-            'Definition': "Landlord insurance is a specialized insurance policy designed for individuals who own residential rental properties. It provides coverage for risks and liabilities associated with renting out a property to tenants.",
-            'Reason': ["If you're aged 31-60 with a rental property, landlord insurance is vital to safeguard your investment, covering property damage, liability, and rental income losses."],
-            'Example': "If you're a 45-year-old with a rental home and your tenant causes a kitchen fire, landlord insurance covers the repair costs, safeguarding your investment and income."
-        },
+    }
 },
     '61-99': {
         'LIFE INSURANCE': {
             'Definition': "Life insurance provides financial protection to your beneficiaries (e.g., family members) upon your death.",
-            'Reason': ["As seniors, you might still have financial responsibilities like mortgages, or want to leave an inheritance or gift to loved ones or charities."],
-            'Example': "Imagine you passed away unexpectedly, leaving behind unpaid medical bills. A life insurance policy would help cover these bills, ensuring your family doesn't bear the financial weight."
+            'Reason': ["Ensuring the financial security of loved ones after passing away is a profound way of expressing care and love, even in absence."],
+            'Example': "A 78-year-old retiree, seeking to ensure their family's financial stability and cover final expenses, opts for a life insurance policy tailored to their age and health status."
         },
         'DISABILITY INSURANCE': {
             'Definition': "Disability insurance offers income protection if you become disabled and can't work.",
-            'Reason': ["While many in this age group might be retired, some are still working. The older you get, the more likely health issues can arise that may prevent working."],
-            'Example': "If a 65-year-old still in the workforce suddenly becomes unable to work due to a severe illness, disability insurance can help maintain their lifestyle."
+            'Reason': ["The peace of mind that comes from knowing one can maintain their lifestyle even if they can no longer work due to a disability is invaluable."],
+            'Example': "At 65, a part-time consultant, still active in their profession, acquires disability insurance to safeguard their income in case of an unexpected illness or injury."
         },
         'AUTO INSURANCE': {
             'Definition': "Auto insurance protects against financial loss in the event of an accident or theft.",
-            'Reason': ["Aging may affect driving abilities, increasing the risk of accidents."],
-            'Example': "A 70-year-old driver gets into a fender bender. Their auto insurance can cover repair costs without affecting their savings."
+            'Reason': ["Protection against the unpredictable nature of driving, especially when the consequences can be more significant, provides a sense of security on the road."],
+            'Example': "A 68-year-old who still enjoys road trips requires auto insurance to protect against potential liabilities and damages involved in driving."
         },
         'HOMEOWNERS INSURANCE': {
             'Definition': "This insurance covers potential damage to your home and its contents.",
-            'Reason': ["Homes often have accumulated value over time and represent a significant portion of an older individual's net worth."],
+            'Reason': ["Protecting the home that has been a lifetime's investment and holds countless memories is a way to safeguard one's legacy."],
             'Example': "A storm causes a tree to fall on an 80-year-old's house. Homeowners insurance helps cover the repair costs."
         },
         'RENTERS INSURANCE': {
             'Definition': "Renters insurance protects your personal property in a rented residence.",
-            'Reason': ["Seniors might downsize to rental properties or live in senior communities."],
+            'Reason': ["Renters insurance offers a sense of security in safeguarding personal belongings that hold both financial and sentimental value."],
             'Example': "A fire in a 75-year-old's apartment building damages their belongings. Renters insurance can cover replacement costs."
         },
         'PERSONAL ARTICLES POLICY': {
             'Definition': "This insurance covers high-value items, like jewelry, art, or electronics.",
-            'Reason': ["Over time, seniors might have collected valuable items like jewelry, art, or antiques."],
+            'Reason': ["Securing personal valuables that represent a lifetime of memories and achievements brings a unique comfort and assurance."],
             'Example': "A precious family heirloom gets stolen from a 68-year-old's home. A personal articles policy can compensate for its value."
         },
         'HOSPITAL INCOME POLICY': {
             'Definition': "Provides a daily allowance for each day you're hospitalized.",
-            'Reason': ["Older age can come with increased hospital stays or medical procedures."],
+            'Reason': ["Having a financial safety net during hospital stays eases the burden, allowing focus on health and recovery."],
             'Example': "A 90-year-old undergoes surgery and spends time in the hospital. Their policy provides daily financial support."
         },
         'PERSONAL LIABILITY UMBRELLA POLICY': {
             'Definition': "Offers extra liability coverage beyond what your other policies provide.",
-            'Reason': ["Assets and savings have often grown over a lifetime, and this policy can protect against large lawsuits."],
+            'Reason': ["An umbrella policy offers peace of mind by providing an extra layer of protection against unforeseen events that could have significant financial impacts."],
             'Example': "If a 78-year-old causes an accident involving multiple cars, this policy can cover damages beyond their auto insurance limit."
         },
         'PET MEDICAL INSURANCE': {
             'Definition': "Covers veterinary expenses if your pet gets sick or injured.",
-            'Reason': ["Pets can be especially crucial companions for seniors, offering emotional support."],
+            'Reason': ["Ensuring that a beloved pet can receive the best medical care without financial strain is a testament to the enduring bond between pets and their owners."],
             'Example': "A 64-year-old's beloved cat requires surgery. Pet medical insurance helps cover the costs, ensuring the cat gets the needed care."
         },
-        'RENTAL DWELLING INSURANCE': {
-            'Definition': "Landlord insurance is a specialized insurance policy designed for property owners who rent out their homes or apartments to tenants.",
-            'Reason': ["Landlords need landlord insurance to protect their investment properties from financial losses caused by damages, liability claims, or loss of rental income."],
-            'Example': "A 70-year-old landlord's insurance would cover repair costs and legal fees from a tenant-caused kitchen fire, protecting their retirement income."
-        },
     }
-}
-    
+}    
         dynamic_policy_list=recommendpolicy
         
         if age <= 30:
